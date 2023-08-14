@@ -1,0 +1,18 @@
+.nav{
+    display: flex;
+    height: 10em;
+    
+}
+
+.nav img{
+    transform: scale(0.5);
+    margin-top: -30px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 20em;
+}
+.nav a{
+    color: rgb(0, 0, 0);
+}
