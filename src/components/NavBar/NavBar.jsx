@@ -4,13 +4,18 @@ import logo from "../../assets/logo.png";
 function NavBar() {
   return (
   
-  <nav class={`navbar ${style.nav}`}  >
-  <div class="container-fluid">
-  <img src={logo} alt="logo" />
+  <nav className={`navbar ${style.nav}`}  >
+  <div className={`container-fluid`}>
+    <div className={style.title}>
+      <img src={logo} alt="logo" />
+      <h1>GrosGar</h1>
+
+    </div>
   <div className={style.buttons}>
-    <button type="button" class="btn btn-light">Inicio</button>
-    <button type="button" class="btn btn-light">Servicios</button>
-    <button type="button" class="btn btn-success">Contáctanos</button>
+    <button type="button" className="btn btn-light">Inicio</button>
+    <button type="button" className="btn btn-light">Servicios</button>
+    <button type="button" className="btn btn-light">Nosotros</button>
+    <button type="button" className="btn btn-success">Contáctanos</button>
   </div>
   </div>
 </nav>

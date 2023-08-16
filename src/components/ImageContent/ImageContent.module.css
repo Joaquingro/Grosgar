@@ -2,6 +2,37 @@
     background-image: url("../../assets/Inicio.jpg");
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
     height: 40em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
 }
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 15.8em;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 87.4em;
+    justify-content: center;
+    height: auto;
+}
+.infoSon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15em;
+    margin-left: 5em;
+    
+}
+
+.infoSon p{
+    width: 43em;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
