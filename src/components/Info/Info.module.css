@@ -1,18 +1,86 @@
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     height: 35em;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+    margin-top: 4em;
 }
 
-.container div{
-    background-color: rgb(81, 87, 95);
-    border-radius: 15px;
-    height: 30em;
-    width: 25em;
+.containerSon{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
+}
+
+.benefit{
+    width: 20em;
+    display: flex;
     color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 36.5em;
+
+}
+
+.benefit div{
+    text-align: center;
+    height: 16em;
+    align-items: center;
+    background-color: rgb(81, 87, 95);
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+   
+
+}
+
+.benefit2{
+    width: 20em;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin-left: 2em;
+    height: 36.5em;
+    justify-content: space-around;
+    margin-top: 3em;
+
+   
+    
+}
+
+.benefit2 div{
+    text-align: center;
+    height: 16em;
+    align-items: center;
+    background-color: rgb(81, 87, 95);
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+   
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15em;
+    margin-left: 5em;
+    
+}
+
+.info p{
+    width: 43em;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info h4{
+    border-bottom: 2px solid gray;
+    width: 5.5em;
+}
+
+.button{
+    width: 15em;
 }

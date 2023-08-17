@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     height: 25em;
-    background-color: rgb(81, 87, 95);
     align-items: center;
 }
 
@@ -21,6 +20,6 @@
     justify-content: center;
     margin-right: 1em;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px;
 }

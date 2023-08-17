@@ -1,0 +1,45 @@
+.container{
+    height: auto;
+    background-color: rgb(81, 87, 95);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSon{
+    display: flex;
+    flex-direction: row;
+}
+
+.containerSon2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.containerSon img{
+    width: 14em;
+}
+
+.containerSon2 img{
+    width: 14em;
+}
+
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15em;
+    margin-left: 5em;
+    color: white;
+    
+}
+
+.info p{
+    width: 43em;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
