@@ -1,25 +1,31 @@
 .container{
     display: flex;
     justify-content: center;
-    height: 25em;
+    height: auto;
     align-items: center;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .containerServices{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: calc(60% - 20px);
 
 }
 
 .containerServices div{
-    width: 15em;
+    width: 20em;
     height: 15em;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 1em;
-    border-radius: 10px;
-    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(81, 87, 95);
+    color: white;
     padding: 10px;
+    margin-top: 1em;
 }
