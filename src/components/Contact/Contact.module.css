@@ -1,0 +1,79 @@
+.container{
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(81, 87, 95);
+    z-index: 1;
+
+}
+
+.title{
+    height: 15em;
+    background-color: white;
+    display: flex;
+    margin-top: -12em;
+    border: 2px solid gray;
+    align-items: center;
+    width: 65em;
+    justify-content: center;
+}
+
+.formContent{
+    background-color: white;
+    height: 25em;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.formContainer input{
+    width: 230px;
+    height: 22px;
+}
+
+.formMessage textarea{
+    height: 100px;
+}
+
+.formFather{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.formMessage{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.formMessage input{
+    height: 200px;
+}
+
+.infoForm{
+    margin-top: -12em;
+}
+
+.send{
+    padding: 10px;
+    width: 100px;
+    margin-left: 225px;
+    background-color:white ;
+    color: rgb(81, 87, 95);
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid rgb(81, 87, 95);  
+}
+
