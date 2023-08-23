@@ -18,7 +18,7 @@ function Home() {
       <Services/>
       <Contact/>
       <Footer/>
-      
+
     </div>
     
   )
