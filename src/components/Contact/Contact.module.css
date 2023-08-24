@@ -1,12 +1,30 @@
 .container{
-    height: 50em;
+    height: 60em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(81, 87, 95);
-    z-index: 1;
+    z-index: 9999;
 
+}
+
+
+.divided{
+    margin-left: 10em;
+    padding: 25px;
+    
+}
+
+.divided h1{
+    text-align: start;
+    margin-left: 0.7em;
+}
+
+.divided p{
+    margin-bottom: 2em;
+    margin-left: 1.9em;
+    
 }
 
 .title{
@@ -22,10 +40,12 @@
 
 .formContent{
     background-color: white;
-    height: 25em;
-    align-items: center;
+    height: 35em;
+    align-items: start;
     display: flex;
+    width: 90em;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .formContainer{
@@ -38,10 +58,14 @@
 .formContainer input{
     width: 230px;
     height: 22px;
+    background-color: rgb(222, 222, 222);
 }
 
 .formMessage textarea{
     height: 100px;
+    background-color: rgb(222, 222, 222);
+
+
 }
 
 .formFather{
@@ -62,18 +86,34 @@
 }
 
 .infoForm{
-    margin-top: -12em;
+    padding: 25px;
+ 
 }
 
 .send{
     padding: 10px;
-    width: 100px;
-    margin-left: 225px;
-    background-color:white ;
-    color: rgb(81, 87, 95);
+    width: 10em;
+    margin-left: 2em;
     margin-top: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 1px solid rgb(81, 87, 95);  
 }
 
+.icon{
+    font-size: 3em;
+    background-color: rgb(222, 222, 222);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.iconDiv{
+    display: flex;
+    align-items: center;
+}
+
+.infoDiv{
+    margin-left: 2em;
+    margin-top: 3em;
+}
