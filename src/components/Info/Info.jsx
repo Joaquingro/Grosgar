@@ -8,21 +8,36 @@ export default function Info() {
 
       <div className={style.containerSon}>
         <div className={style.benefit}>
-            <div 
+            <div className={style.benefitContent}  
             data-aos="flip-up" 
-            data-aos-duration="1000">Hola</div>
-            <div
+            data-aos-duration="1000">
+              <p>Cumplimiento Legal y Fiscal</p>
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+
+            <div className={style.benefitContent}
             data-aos="flip-up" 
             data-aos-duration="1000"
-            >Beneficio</div>
+            >
+              <p>Control de Gastos</p>
+              <i class="bi bi-wallet2"></i>
+            </div>
         </div>  
+
         <div className={style.benefit2}>
-            <div
+            <div className={style.benefitContent}
             data-aos="flip-up" 
-            data-aos-duration="1000">Hola</div>
-            <div
+            data-aos-duration="1000">
+             <p>Crecimiento Sostenible</p> 
+             <i class="bi bi-graph-up-arrow"></i>
+            </div>
+
+            <div className={style.benefitContent}
             data-aos="flip-up" 
-            data-aos-duration="1000">Beneficio</div>
+            data-aos-duration="1000">
+              <p>Planificación de Impuestos</p> 
+              <i class="bi bi-list-check"></i>
+              </div>
         </div>         
        </div>    
 
@@ -33,9 +48,9 @@ export default function Info() {
         data-aos-duration="1500"
         className={style.info}>
           <h4>BENEFICIOS</h4>
-            <h1>ASESORÍA CONTABLE A SU SERVICIO</h1>
-            <p>Entendemos que cada número cuenta y que detrás de cada cifra hay una historia única y valiosa. Somos un equipo comprometido de profesionales contables que se dedica a desbloquear el potencial financiero de su negocio.</p>
-            <button type="button" class={`btn btn-secondary ${style.button}`}>Secondary</button>
+            <h1>¿Qué beneficios nos aporta?</h1>
+            <p> Proporciona una imagen clara y detallada de todas las transacciones monetarias y actividades económicas que ocurren en el negocio. Aquí están las razones fundamentales por las que la contabilidad es crucial.</p>
+            <button type="button" class={`btn btn-secondary ${style.button}`}>Conoce más</button>
         </div>
 
 

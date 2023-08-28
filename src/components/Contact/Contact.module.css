@@ -28,14 +28,15 @@
 }
 
 .title{
-    height: 15em;
+    height: 10em;
     background-color: white;
     display: flex;
     margin-top: -12em;
     border: 2px solid gray;
     align-items: center;
-    width: 65em;
+    width: 90em;
     justify-content: center;
+    flex-direction: column;
 }
 
 .formContent{
@@ -51,7 +52,7 @@
 .formContainer{
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 29px;
     margin-bottom: 25px;
 }
 

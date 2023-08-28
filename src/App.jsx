@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <Whatsapp/>
+    {/* <Whatsapp/> */}
     <Routes>
       <Route path={"/"} element={<Home />} />
       <Route path={"/detail:id"} element={<Detail />} />

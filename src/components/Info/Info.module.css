@@ -84,3 +84,16 @@
 .button{
     width: 15em;
 }
+
+.benefitContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.benefitContent p{
+    font-size: 17px;
+}
+
+.benefitContent i{
+    font-size: 3.5em;
+}

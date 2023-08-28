@@ -22,14 +22,15 @@ const handleInput = (event) => {
   return (
     <div className={style.container}>
         <div className={style.title}>
-          <h1>Contactanos, somos tu mejor opción</h1>
+          <h3>¿Preguntas sobre impuestos, contabilidad o planificación financiera? </h3>
+          <h1>¡Contáctenos hoy!</h1>
         </div>
 
         <div className={style.formContent}>
 
           <div className={style.infoForm}>
 
-            <h1>Ponte en contacto con nosotros</h1>
+            <h1> Nuestro equipo está listo para brindar respuestas</h1>
             <div className={style.iconDiv}>
               <i className={`bi bi-telephone ${style.icon}`}></i>
               <div className={style.infoDiv}>

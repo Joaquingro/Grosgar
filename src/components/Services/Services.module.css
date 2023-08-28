@@ -1,12 +1,15 @@
 .container{
     display: flex;
     justify-content: center;
-    height: auto;
+    height: 50em;
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    margin-bottom: 10em;
-    z-index: 0;
+    margin-bottom: 15em;
+}
+
+.container p{
+    margin-bottom: 2em;
 }
 
 .containerServices{
@@ -14,20 +17,40 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: calc(60% - 20px);
+    width: calc(80% - 10px);
 
 }
 
 .containerServices div{
-    width: 20em;
+    width: 30em;
     height: 15em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-right: 1em;
     border-radius: 5px;
     background-color: rgb(81, 87, 95);
     color: white;
-    padding: 10px;
+    padding: 13px;
     margin-top: 1em;
+    flex-direction: column;
+}
+
+
+.serviceContent{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+}
+
+.serviceContent p{
+    width: 20em;
+    margin-left: 1em;
+}
+
+.serviceContent i{
+    font-size: 3.5em;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
 }
