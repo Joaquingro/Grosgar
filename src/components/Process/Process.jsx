@@ -5,11 +5,11 @@ import resumen from "../../assets/resumen.webp";
 import aseso from "../../assets/asesoramiento.jpg";
 import Aos from '../../assets/Aos';
 
-export default function Process() {
+export default function Process({isDarkMode}) {
 
     
   return (
-    <div className={style.container}>
+    <div className={isDarkMode? style.dark : style.container}>
         <div 
         data-aos="zoom-in" 
         data-aos-duration="1000"

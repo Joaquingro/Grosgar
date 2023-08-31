@@ -54,3 +54,68 @@
     padding: 5px;
     border-radius: 10px;
 }
+
+/**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+
+
+ .dark{
+    display: flex;
+    justify-content: center;
+    height: 50em;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 15em;
+    color: white;
+}
+
+.dark p{
+    margin-bottom: 2em;
+}
+
+.dark1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: calc(80% - 10px);
+
+}
+
+.dark1 div{
+    width: 30em;
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 1em;
+    border-radius: 5px;
+    background-color: rgb(211, 212, 213);
+    color: black;
+    padding: 13px;
+    margin-top: 1em;
+    flex-direction: column;
+}
+
+
+.dark2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+}
+
+.dark2 p{
+    width: 20em;
+    margin-left: 1em;
+}
+
+.dark2 i{
+    font-size: 3.5em;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}

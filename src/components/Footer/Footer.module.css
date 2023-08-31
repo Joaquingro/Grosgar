@@ -58,3 +58,72 @@
     margin-left: 10px;
 }
 
+
+
+/**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+
+ .dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32em;
+    background-color: rgb(39, 39, 39);;
+    z-index: 1;
+    margin-top: -22em;
+}
+
+.dark1{
+    margin-top: 5em;
+}
+
+.dark2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10em;
+    align-items: center;
+    justify-content: space-between;
+    width: 90em;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+
+.dark3{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.dark3 img{
+    width: 5em;
+    margin-top: -10px;
+}
+
+.dark3 h1{
+    color: white;
+    font-size: 2.5em;
+    
+}
+
+.dark4{
+    color: white;
+    font-weight: bold;
+
+}
+
+.dark5{
+    font-size: 1.5em;
+}
+.dark6{
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.dark7{
+    padding-top: 10px;
+    color: white;
+}

@@ -1,25 +1,29 @@
 .nav{
     display: flex;
-    height: 10em;
-    
+    height: 9em;
 }
 
 .nav img{
     transform: scale(0.5);
     margin-top: -30px;
 }
+
+.containerButtons{
+    display: flex;
+    width: 100%;
+    margin-left: 48em;
+}
+
 .buttons{
     display: flex;
-    justify-content: space-around;
+    
 }
 .buttons button{
     margin-left: 3em;
     padding: 15px;
+    
+}
 
-}
-.nav a{
-    color: rgb(0, 0, 0);
-}
 
 .title{
     display: flex;
@@ -39,3 +43,49 @@
     margin-top: -0.5em;
     font-size: 3.5em;
 }
+
+
+/**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+ 
+.dark{
+    display: flex;
+    height: 9em;
+    background-color: rgb(20, 20, 20);
+}
+
+.dark img{
+    transform: scale(0.5);
+    margin-top: -30px;
+}
+
+.dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.dark img{
+    width: 13.5em;
+}
+
+.dark h1{
+    margin-left: -1em;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-top: -0.5em;
+    font-size: 3.5em;
+}
+
+.dark button{
+    margin-left: 3em;
+    padding: 15px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+

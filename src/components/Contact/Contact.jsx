@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import style from "../Contact/Contact.module.css";
 import Background from '../Background/Background';
 
-export default function Contact() {
+export default function Contact({isDarkMode}) {
   
   const [inputs, setInputs] = useState({
     name: "",
@@ -20,28 +20,28 @@ const handleInput = (event) => {
 }
 
   return (
-    <div className={style.container}>
-        <div className={style.title}>
+    <div className={isDarkMode ? style.dark : style.container}>
+        <div className={isDarkMode ? style.dark1 : style.title}>
           <h3>¿Preguntas sobre impuestos, contabilidad o planificación financiera? </h3>
-          <h1>¡Contáctenos hoy!</h1>
+          <h1>¡Contáctanos hoy!</h1>
         </div>
 
-        <div className={style.formContent}>
+        <div className={isDarkMode ? style.dark2 : style.formContent}>
 
-          <div className={style.infoForm}>
+          <div className={isDarkMode ? style.dark3 : style.infoForm}>
 
             <h1> Nuestro equipo está listo para brindar respuestas</h1>
-            <div className={style.iconDiv}>
-              <i className={`bi bi-telephone ${style.icon}`}></i>
-              <div className={style.infoDiv}>
+            <div className={isDarkMode ? style.dark4 : style.iconDiv}>
+              <i className={isDarkMode ? `bi bi-telephone ${style.dark5}` : `bi bi-telephone ${style.icon}`}></i>
+              <div className={isDarkMode ? style.dark11 : style.infoDiv}>
                 <h5>Nuestro teléfono</h5>
                 <p>+52 5532943994</p>
               </div>
             </div>
             
-            <div className={style.iconDiv}>
-              <i className={`bi bi-envelope-paper ${style.icon}`}></i>
-              <div className={style.infoDiv}>
+            <div className={isDarkMode ? style.dark4 : style.iconDiv}>
+              <i className={isDarkMode ? `bi bi-envelope-paper ${style.dark5}` : `bi bi-envelope-paper ${style.icon}`}></i>
+              <div className={isDarkMode ? style.dark11 : style.infoDiv}>
                 <h5>Nuestro correo electrónico</h5>
                 <p>contabilidadivmg@gmail.com</p>
               </div>
@@ -50,11 +50,11 @@ const handleInput = (event) => {
           </div>
 
           
-        <div className={style.divided}>
+        <div className={isDarkMode ? style.dark6 : style.divided}>
           <h1>Asesoramiento Gratuito</h1>
           <p>¿Tienes alguna duda? Háznolos saber</p>
-          <div className={style.formFather}>
-                <div className={style.formContainer}>
+          <div className={isDarkMode ? style.dark7 : style.formFather}>
+                <div className={isDarkMode ? style.dark8 : style.formContainer}>
                     <input 
                     className = "form-control form-control-lg" 
                     name="name" 
@@ -65,7 +65,7 @@ const handleInput = (event) => {
                     >
                     </input>
                 </div>
-                    <div className={style.formContainer}>
+                    <div className={isDarkMode ? style.dark8 : style.formContainer}>
                     <input 
                     className = "form-control form-control-lg" 
                     name = "email" 
@@ -76,7 +76,7 @@ const handleInput = (event) => {
                     </input>
                 </div>  
             </div>
-            <div className={style.formMessage}>
+            <div className={isDarkMode ? style.dark9 : style.formMessage}>
                 <textarea 
                 className = "form-control form-control-lg" 
                 name="message" 
@@ -88,7 +88,7 @@ const handleInput = (event) => {
                 ></textarea>
             </div>
         
-            <button type="submit" className={`btn btn-secondary ${style.send}`}>Enviar</button>
+            <button type="submit" className={isDarkMode ? `btn btn-secondary ${style.dark10}` : `btn btn-secondary ${style.send}`}>Enviar</button>
             </div>
         </div>
 

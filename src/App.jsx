@@ -8,11 +8,18 @@ import Whatsapp from './components/Whatsapp/Whatsapp'
 
 function App() {
 
+  
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  }
+
   return (
     <>
     {/* <Whatsapp/> */}
     <Routes>
-      <Route path={"/"} element={<Home />} />
+      <Route path={"/"} element={<Home isDarkMode = {isDarkMode} handleDarkMode = {handleDarkMode}/>} />
       <Route path={"/detail:id"} element={<Detail />} />
     </Routes>
     </>

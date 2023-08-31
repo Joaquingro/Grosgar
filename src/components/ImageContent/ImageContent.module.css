@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
+    margin-top: 3em;
 }
 
 .info{
@@ -42,6 +43,18 @@
 	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
+
+
+/**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+
+
+
+
 
 /**
  * ----------------------------------------

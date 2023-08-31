@@ -8,16 +8,16 @@ import Footer from '../../components/Footer/Footer';
 import Process from '../../components/Process/Process';
 import Contact from '../../components/Contact/Contact';
 
-function Home() {
+function Home({isDarkMode, handleDarkMode}) {
   return (
-    <div>
-      <NavBar/>
+    <div className={isDarkMode ? style.dark : style.white}>
+      <NavBar isDarkMode = {isDarkMode} handleDarkMode = {handleDarkMode} />
       <ImageContent/>
-      <Info/>
-      <Process/>
-      <Services/>
-      <Contact/>
-      <Footer/>
+      <Info isDarkMode = {isDarkMode}/>
+      <Process isDarkMode = {isDarkMode} />
+      <Services isDarkMode = {isDarkMode}/>
+      <Contact isDarkMode = {isDarkMode}/>
+      <Footer isDarkMode = {isDarkMode}/>
 
     </div>
     

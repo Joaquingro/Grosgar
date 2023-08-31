@@ -85,3 +85,19 @@
 .step1 p{
     margin-top: -12px;
 }
+
+
+/**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+
+ .dark{
+    height: 95em;
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
