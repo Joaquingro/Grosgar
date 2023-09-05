@@ -16,7 +16,7 @@ function Home({isDarkMode, handleDarkMode}) {
       <Info isDarkMode = {isDarkMode}/>
       <Process isDarkMode = {isDarkMode} />
       <Services isDarkMode = {isDarkMode}/>
-      <Contact isDarkMode = {isDarkMode}/>
+      <Contact id = "contact" isDarkMode = {isDarkMode}/>
       <Footer isDarkMode = {isDarkMode}/>
 
     </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import style from "../Contact/Contact.module.css";
 import Background from '../Background/Background';
 
-export default function Contact({isDarkMode}) {
+export default function Contact({isDarkMode, id}) {
   
   const [inputs, setInputs] = useState({
     name: "",
@@ -20,7 +20,7 @@ const handleInput = (event) => {
 }
 
   return (
-    <div className={isDarkMode ? style.dark : style.container}>
+    <div id={id} className={isDarkMode ? style.dark : style.container}>
         <div className={isDarkMode ? style.dark1 : style.title}>
           <h3>¿Preguntas sobre impuestos, contabilidad o planificación financiera? </h3>
           <h1>¡Contáctanos hoy!</h1>

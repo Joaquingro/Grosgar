@@ -2,9 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home/Home'
-import Detail from './pages/Detail/Detail'
 import NavBar from './components/NavBar/NavBar'
 import Whatsapp from './components/Whatsapp/Whatsapp'
+import ServiceDetail from './pages/ServiceDetail/ServiceDetail'
+import About from './pages/About/About'
 
 function App() {
 
@@ -20,7 +21,9 @@ function App() {
     {/* <Whatsapp/> */}
     <Routes>
       <Route path={"/"} element={<Home isDarkMode = {isDarkMode} handleDarkMode = {handleDarkMode}/>} />
-      <Route path={"/detail:id"} element={<Detail />} />
+      <Route path={"/services"} element={<ServiceDetail />} />
+      <Route path={"/about"} element={<About />} />
+
     </Routes>
     </>
   )
