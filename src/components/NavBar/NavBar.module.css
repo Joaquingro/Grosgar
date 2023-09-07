@@ -99,10 +99,20 @@
     transform: scale(0.6);
     margin-left: -7em;
   }
+
+  .dark{
+    transform: scale(0.6);
+    margin-left: -7em;
+  }
 }
 @media (min-width: 391px) and (max-width: 768px) {
   /* Estilos para pantallas con ancho máximo de 768px */
   .title{
+    transform: scale(0.6);
+    margin-left: -7em;
+  }
+
+  .dark{
     transform: scale(0.6);
     margin-left: -7em;
   }
