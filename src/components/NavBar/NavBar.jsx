@@ -13,7 +13,7 @@ function NavBar({isDarkMode, handleDarkMode}) {
   
   <nav className={isDarkMode ? `navbar navbar-expand-lg ${style.dark}` :`navbar navbar-expand-lg  ${style.nav}`}  >
   <div className={`container-fluid ${style.containerContent}`}>
-    <div className={isDarkMode ? `${style.dark}` : `${style.title}`  }>
+    <div className={isDarkMode ? `${style.dark1}` : `${style.title}`  }>
       <img src={logo} alt="logo" />
       <h1>GrosGar</h1>
     </div>
