@@ -116,9 +116,13 @@
     margin-left: -7em;
   }
 
-  .dark{
+  .dark1{
     transform: scale(0.6);
     margin-left: -7em;
+  }
+  
+  .containerButtons{
+    margin-left: 4em;
   }
 }
 
@@ -132,4 +136,5 @@
     margin-left: 17em;
   }
 }
+
 
