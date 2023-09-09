@@ -81,7 +81,7 @@
     font-size: 3.5em;
 }
 
-.dark1 button{
+.dark button{
     margin-left: 3em;
     padding: 15px;
     background-color: rgb(20, 20, 20);
@@ -104,9 +104,19 @@
     margin-left: 4em;
   }
 
+/**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+
   .dark1{
     transform: scale(0.6);
     margin-left: -7em;
+  }
+
+  .dark2{
+    margin-left: 4em;
   }
 }
 @media (min-width: 391px) and (max-width: 768px) {
@@ -116,12 +126,25 @@
     margin-left: -7em;
   }
 
+  .containerButtons{
+    margin-left: 4em;
+  }
+  
+ 
+
+  /**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+
+  
   .dark1{
     transform: scale(0.6);
     margin-left: -7em;
   }
-  
-  .containerButtons{
+
+  .dark2{
     margin-left: 4em;
   }
 }

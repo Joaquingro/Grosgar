@@ -220,14 +220,17 @@
     }
 
     .containerSon{
-        transform: scale(0.5);
+        transform: scale(0.55);
         margin-top: -3em;
     }
 
     .info p{
         width: 18em;
     }
-    
+    .benefitContent p{
+        font-size: 30px;
+    }
+
    .info{
     margin-left: 0;
     padding: 5px;
@@ -252,6 +255,11 @@
     .dark1{
         transform: scale(0.5);
         margin-top: -3em;
+    }
+
+    .dark3 p{
+        font-size: 30px;
+
     }
 
     .dark5 p{
@@ -277,7 +285,7 @@
     }
 
     .containerSon{
-        transform: scale(0.6);
+        transform: scale(0.55);
         margin-top: -3em;
     }
 
@@ -289,6 +297,10 @@
     margin-left: 0;
     padding: 5px;
    }
+
+   .benefitContent p{
+    font-size: 30px;
+        }
 
     .button{
         display: none;
@@ -310,6 +322,11 @@
         margin-top: -3em;
     }
 
+    .dark3 p{
+        font-size: 30px;
+
+    }
+    
     .dark5 p{
         width: 18em;
     }

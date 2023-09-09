@@ -61,8 +61,8 @@ export default function Process({isDarkMode}) {
         data-aos-duration="1000"
         data-aos="zoom-in" 
         className={style.containerSon}>
-            <img src={resumen} alt=''/>
-            <div className={style.info}>
+            <img className={style.imgInfo3} src={resumen} alt=''/>
+            <div className={style.info3}>
                 <h3>Paso 3: Comunicación y seguimiento continuo</h3>
 
                 <div className={style.step1}>
