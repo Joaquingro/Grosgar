@@ -17,7 +17,7 @@ function NavBar({isDarkMode, handleDarkMode}) {
       <img src={logo} alt="logo" />
       <h1>GrosGar</h1>
     </div>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button className={isDarkMode ? `navbar-toggler ${style.dark2}` : `navbar-toggler ${style.hamburguer}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
   <div className={`collapse navbar-collapse ${style.containerButtons}`} id="navbarSupportedContent">

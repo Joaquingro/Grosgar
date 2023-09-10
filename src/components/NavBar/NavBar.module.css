@@ -10,8 +10,11 @@
 
 .containerButtons{
     display: flex;
-    width: 100%;
     margin-left: 48em;
+}
+
+.containerContent{
+  width: 100%;
 }
 
 .buttons{
@@ -21,6 +24,7 @@
 .buttons button{
     margin-left: 3em;
     padding: 15px;
+    z-index: 9999;
     
 }
 
@@ -100,23 +104,41 @@
 @media (max-width: 391px) {
   .title{
     transform: scale(0.6);
-    margin-left: -7em;
+    margin-left: -6em;
+    width: 100%;
   }
 
   .containerButtons{
     margin-left: 4em;
   }
 
+  
 /**
  * ----------------------------------------
  * DARK MODE
  * ----------------------------------------
  */
+ 
+ .dark1{
+   transform: scale(0.6);
+   margin-left: -6em;
+   width: 100%;
 
-  .dark1{
-    transform: scale(0.6);
-    margin-left: -7em;
+ }
+  .dark2{
+    width: 1.5em;
+    height: 2.2em;
+    margin-right: 4px;
+    padding: 5px;
   }
+
+  .dark2 span{
+      margin-left: -14px;
+      margin-top: -10px;
+      font-size: 20px;
+
+  }  
+
 
   
 }
