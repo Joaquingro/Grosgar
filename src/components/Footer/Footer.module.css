@@ -21,6 +21,8 @@
 .title img{
     width: 5em;
     margin-top: -10px;
+    clip-path: circle(42%);
+    background-color: white;
 }
 
 .title h1{
@@ -101,6 +103,9 @@
 .dark3 img{
     width: 5em;
     margin-top: -10px;
+    clip-path: circle(42%);
+    background-color: white;
+
 }
 
 .dark3 h1{
