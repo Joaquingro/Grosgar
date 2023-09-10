@@ -109,15 +109,43 @@
   }
 
   .containerButtons{
-    margin-left: 4em;
+    margin-left: 5em;
+    width: 100%;
+    height: max-content;
+    margin-top: -3em;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 6px;
+    border-bottom-left-radius: 150px;
+    border-top-left-radius: 150px;
   }
 
+  .buttons button{
+    margin-top: -0.5em;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    width: 7em;
+
+  }
+
+
+  .darkMode{
+    width: 4em !important;
+
+  }
   
 /**
  * ----------------------------------------
  * DARK MODE
  * ----------------------------------------
  */
+
+ .dark button{
+  color: black;
+  border: none;
+ }
  
  .dark1{
    transform: scale(0.6);
@@ -130,15 +158,23 @@
     height: 2.2em;
     margin-right: 4px;
     padding: 5px;
+    background-color: white !important;
+   
+    
+    
   }
 
   .dark2 span{
       margin-left: -14px;
       margin-top: -10px;
       font-size: 20px;
+     
+
 
   }  
 
+  
+  
 
   
 }
@@ -150,9 +186,31 @@
   }
 
   .containerButtons{
-    margin-left: 4em;
+    margin-left: 8em;
+    width: 30em;
+    height: max-content;
+    margin-top: -2em;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 6px;
+    border-bottom-left-radius: 150px;
+    border-top-left-radius: 150px;
   }
-  
+
+  .buttons button{
+    margin-top: -0.5em;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    width: 7em;
+
+  }
+
+  .darkMode{
+    width: 4em !important;
+
+  }
  
 
   /**
@@ -167,6 +225,14 @@
     margin-left: -7em;
   }
 
+  .dark2{
+    background-color: white !important;
+    height: 2em;
+  }
+
+  .dark2 span{
+    margin-top: -10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {

@@ -22,7 +22,7 @@ function NavBar({isDarkMode, handleDarkMode}) {
     </button>
   <div className={`collapse navbar-collapse ${style.containerButtons}`} id="navbarSupportedContent">
     <div className={`collapse navbar-collapse ${style.buttons}`} id="navbarSupportedContent">
-    <button type="button" className="btn btn-dark" onClick={handleDarkMode}>
+    <button type="button" className={`btn btn-dark ${style.darkMode}`} onClick={handleDarkMode}>
       {isDarkMode ? <i className="bi bi-brightness-high-fill"></i> : <i className="bi bi-moon-stars-fill"></i>}
         </button>
 
