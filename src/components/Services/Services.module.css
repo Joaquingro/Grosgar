@@ -127,11 +127,136 @@
  */
 
  @media (max-width: 391px) {
+    .container{
+        margin-top: -33em;
+    }
+
+    .serviceContent p{
+        display: none;
+    }
+
+    .containerServices{
+        width: calc(110% - 20px);
+    }
+
+    .containerServices div{
+        width: 8em;
+        height: 8em;
+        border-radius: 100px;
+    }
+
+    .containerServices h5{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .serviceContent i{
+        font-size: 2em;
+        margin-top: -0.8em;
+    }
+
+    /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+        margin-top: -33em;
+    }
+
+    .dark2 p{
+        display: none;
+    }
+
+    .dark1{
+        width: calc(110% - 20px);
+    }
+
+    .dark1 div{
+        width: 8em;
+        height: 8em;
+        border-radius: 100px;
+    }
+
+    .dark1 h5{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .dark2 i{
+        font-size: 2em;
+        margin-top: -0.8em;
+    }
 
  }
  @media (min-width: 391px) and (max-width: 768px) {
    /* Estilos para pantallas con ancho máximo de 768px */
-  
+   .container{
+    margin-top: -33em;
+    }
+
+    .serviceContent p{
+        display: none;
+    }
+
+    .containerServices{
+        width: calc(110% - 20px);
+    }
+
+    .containerServices div{
+        width: 8em;
+        height: 8em;
+        border-radius: 100px;
+    }
+
+    .containerServices h5{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .serviceContent i{
+        font-size: 2em;
+        margin-top: -0.8em;
+    }
+
+    /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+        margin-top: -33em;
+    }
+
+    .dark2 p{
+        display: none;
+    }
+
+    .dark1{
+        width: calc(110% - 20px);
+    }
+
+    .dark1 div{
+        width: 8em;
+        height: 8em;
+        border-radius: 100px;
+    }
+
+    .dark1 h5{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 9px;
+    }
+
+    .dark2 i{
+        font-size: 2em;
+        margin-top: -0.8em;
+    }
  }
  
  @media (min-width: 768px) and (max-width: 992px) {

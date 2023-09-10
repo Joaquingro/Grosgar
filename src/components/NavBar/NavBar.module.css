@@ -81,6 +81,7 @@
     font-size: 3.5em;
 }
 
+
 .dark button{
     margin-left: 3em;
     padding: 15px;
@@ -115,9 +116,7 @@
     margin-left: -7em;
   }
 
-  .dark2{
-    margin-left: 4em;
-  }
+  
 }
 @media (min-width: 391px) and (max-width: 768px) {
   /* Estilos para pantallas con ancho máximo de 768px */
@@ -144,9 +143,6 @@
     margin-left: -7em;
   }
 
-  .dark2{
-    margin-left: 4em;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {

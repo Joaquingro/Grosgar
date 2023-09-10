@@ -220,7 +220,7 @@
     }
 
     .containerSon{
-        transform: scale(0.55);
+        transform: scale(0.5);
         margin-top: -3em;
     }
 
@@ -267,9 +267,9 @@
     }
     
    .dark5{
-    margin-left: 0;
-    padding: 5px;
-    margin-top: 2em;
+        margin-left: 0;
+        padding: 5px;
+        margin-top: 2em;
    }
 
     .dark6{

@@ -20,7 +20,7 @@ function NavBar({isDarkMode, handleDarkMode}) {
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-  <div className={isDarkMode ? `collapse navbar-collapse ${style.dark2}` : `collapse navbar-collapse ${style.containerButtons}`} id="navbarSupportedContent">
+  <div className={`collapse navbar-collapse ${style.containerButtons}`} id="navbarSupportedContent">
     <div className={`collapse navbar-collapse ${style.buttons}`} id="navbarSupportedContent">
     <button type="button" className="btn btn-dark" onClick={handleDarkMode}>
       {isDarkMode ? <i className="bi bi-brightness-high-fill"></i> : <i className="bi bi-moon-stars-fill"></i>}
