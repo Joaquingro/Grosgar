@@ -21,7 +21,7 @@
 .title img{
     width: 5em;
     margin-top: -10px;
-    clip-path: circle(42%);
+    clip-path: circle(40%);
     background-color: white;
 }
 
@@ -103,7 +103,7 @@
 .dark3 img{
     width: 5em;
     margin-top: -10px;
-    clip-path: circle(42%);
+    clip-path: circle(40%);
     background-color: white;
 
 }
