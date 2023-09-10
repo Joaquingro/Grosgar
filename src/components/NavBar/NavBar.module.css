@@ -110,7 +110,7 @@
 
   .containerButtons{
     margin-right: -3em;
-    margin-left: 4.3em;
+    margin-left: 4em;
     width: 100%;
     height: max-content;
     margin-top: -3em;
@@ -134,6 +134,7 @@
 
   .darkMode{
     width: 4em !important;
+    border-radius: 50px;
 
   }
   
@@ -211,6 +212,7 @@
 
   .darkMode{
     width: 4em !important;
+    border-radius: 50px;
 
   }
  
