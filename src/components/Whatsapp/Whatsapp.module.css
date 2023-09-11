@@ -1,5 +1,99 @@
 .container{
     position: fixed;
-    display: flex;
     z-index: 9999;
+    right: 20px;
+    bottom: 20px;
+   
+}
+
+.container button{
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 50px;
+    position: relative;
+    z-index: 9999;
+}
+
+.container i{
+    font-size: 1.9em;
+}
+
+.custom-toast-body {
+    color: rgb(7, 152, 12); 
+    height: 2em !important; 
+    margin-top: 5px;
+    font-weight: bold;
+    position: fixed;
+}
+  
+  .custom-toast {
+    width: 18em;
+    background-color: rgb(255, 255, 255) !important;
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    position: fixed;
+    right: 10px
+}
+
+/*
+ * ----------------------------------------
+ * RESPONSIVE
+ * ----------------------------------------
+ */
+
+@media (max-width: 391px) {
+    .container{
+        width: fit-content;
+        right: 0;
+        bottom: 0;
+    }
+    .container button{
+        height: 3.2em;
+        width: 3.2em;
+    }
+
+    .container i{
+        font-size: 1.6em;
+    }
+
+    .custom-toast{
+        height: 20px;
+        position: fixed;
+        top: -18px;
+        left: 40px
+    }
+}
+@media (min-width: 391px) and (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px */
+  .container{
+        width: fit-content;
+        right: 0;
+        bottom: 0;
+    }
+
+  .container button{
+        height: 3.2em;
+        width: 3.2em;
+    }
+
+    .container i{
+        font-size: 1.6em;
+    }
+
+    
+
+    .custom-toast{
+        position: fixed;
+        top: -18px;
+        left: 90px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Estilos para pantallas con ancho entre 768px y 992px */
+}
+
+@media (min-width: 992px) and (max-width: 1500px) {
+  /* Estilos para pantallas con ancho mínimo de 992px */
 }

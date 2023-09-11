@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-    {/* <Whatsapp/> */}
+    <Whatsapp/>
     <Routes>
       <Route path={"/"} element={<Home isDarkMode = {isDarkMode} handleDarkMode = {handleDarkMode}/>} />
       <Route path={"/services"} element={<ServiceDetail />} />
