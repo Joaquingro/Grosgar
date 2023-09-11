@@ -20,7 +20,7 @@ const handleInput = (event) => {
 }
 
   return (
-    <div id={id} className={isDarkMode ? style.dark : style.container}>
+    <div className={isDarkMode ? style.dark : style.container}>
         <div className={isDarkMode ? style.dark1 : style.title}>
           <h3>¿Preguntas sobre impuestos, contabilidad o planificación financiera? </h3>
           <h1>¡Contáctanos hoy!</h1>
@@ -28,7 +28,7 @@ const handleInput = (event) => {
 
         <div className={isDarkMode ? style.dark2 : style.formContent}>
 
-          <div className={isDarkMode ? style.dark3 : style.infoForm}>
+          <div id={id}  className={isDarkMode ? style.dark3 : style.infoForm}>
 
             <h1> Nuestro equipo está listo para brindar respuestas</h1>
             <div className={isDarkMode ? style.dark4 : style.iconDiv}>
