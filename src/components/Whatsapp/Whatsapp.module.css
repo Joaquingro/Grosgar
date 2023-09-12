@@ -1,40 +1,38 @@
-.container{
-    position: fixed;
-    z-index: 9999;
-    right: 50px;
-    bottom: 50px;
-
-}
-
-.container button{
-    height: 3.5em;
-    width: 3.5em;
-    border-radius: 50px;
+.container {
     position: relative;
     z-index: 9999;
-}
-
-.container i{
+    width: 100%;
+  }
+  
+  .container button {
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    position: fixed; 
+    z-index: 9999;
+    right: 5%;
+    bottom: 5%;
+  }
+  
+  .container i {
     font-size: 1.5em;
-}
-
-.custom-toast-body {
-    color: rgb(7, 152, 12); 
-    height: 2em !important; 
+  }
+  
+  .custom-toast-body {
+    color: rgb(7, 152, 12);
+    height: 2em !important;
     font-weight: bold;
-}
+  }
   
   .custom-toast {
     width: 18em;
     background-color: rgb(255, 255, 255) !important;
-    border-top-left-radius: 30px !important;
-    border-bottom-left-radius: 30px !important;
-    border-bottom-right-radius: 30px !important;
+    border-radius: 30px !important;
     position: fixed;
-    right: 20px;
+    right: 70px;
     bottom: 15px;
-}
-
+  }
+  
 /*
  * ----------------------------------------
  * RESPONSIVE
@@ -42,14 +40,12 @@
  */
 
 @media (max-width: 391px) {
-    .container{
-        width: fit-content;
-        right: 0;
-        bottom: 0;
-    }
+   
     .container button{
         height: 3.2em;
         width: 3.2em;
+        bottom: 2%;
+        right: 4%;
     }
 
     .container i{
@@ -58,9 +54,8 @@
 
     .custom-toast{
         height: 20px;
-        position: fixed;
-        top: -18px;
-        left: 40px
+        left: 50px;
+
     }
 }
 @media (min-width: 391px) and (max-width: 768px) {
@@ -83,7 +78,6 @@
     
 
     .custom-toast{
-        position: fixed;
         top: -18px;
         left: 90px
     }

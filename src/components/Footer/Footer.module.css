@@ -6,6 +6,7 @@
     background-color: rgb(17, 17, 17);
     z-index: 1;
     margin-top: -22em;
+    width: 100%;
 }
 
 .sonContainer{
