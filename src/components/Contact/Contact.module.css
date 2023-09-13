@@ -36,6 +36,7 @@
     align-items: center;
     width: 90em;
     justify-content: center;
+    border-radius: 5px;
     flex-direction: column;
 }
 
@@ -148,6 +149,8 @@
     justify-content: center;
     flex-direction: column;
     color: white;
+    border-radius: 5px;
+
 }
 
 .dark2{
@@ -268,6 +271,7 @@
  @media (max-width: 391px) {
     .container{
         margin-top: -10em;
+        height: 50em;
     }
     .title{
         width: 80%;
@@ -284,7 +288,7 @@
     .formContent{
         flex-direction: column;
         width: 80%;
-        margin-top: -5em;
+        margin-top: -10em;
         height: max-content;
         align-items: center;
     }
@@ -319,6 +323,7 @@
 
     .dark{
         margin-top: -10em;
+        height: 50em;
     }
     .dark1{
         width: 80%;
@@ -335,7 +340,7 @@
     .dark2{
         flex-direction: column;
         width: 80%;
-        margin-top: -5em;
+        margin-top: -10em;
         height: max-content;
         align-items: center;
     }
@@ -364,7 +369,9 @@
  @media (min-width: 391px) and (max-width: 768px) {
    /* Estilos para pantallas con ancho máximo de 768px */
    .container{
-    margin-top: -10em;
+        height: 55em;
+        margin-top: -10em;
+        
     }
     .title{
         width: 80%;
@@ -381,8 +388,7 @@
     .formContent{
         flex-direction: column;
         width: 80%;
-        margin-top: -5em;
-        height: max-content;
+        margin-top: -10em;
         align-items: center;
     }
 
@@ -416,6 +422,7 @@
 
     .dark{
         margin-top: -10em;
+        height: 55em;
     }
     .dark1{
         width: 80%;
@@ -432,7 +439,7 @@
     .dark2{
         flex-direction: column;
         width: 80%;
-        margin-top: -5em;
+        margin-top: -10em;
         height: max-content;
         align-items: center;
     }

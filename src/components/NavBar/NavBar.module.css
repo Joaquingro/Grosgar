@@ -1,6 +1,9 @@
 .nav{
-    display: flex;
-    height: 9em;
+  display: flex;
+  height: 9em;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .nav img{
@@ -8,21 +11,25 @@
     margin-top: -30px;
 }
 
-.containerButtons{
-    display: flex;
-    margin-left: 48em;
+.containerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.containerContent{
-  width: 100%;
+.containerButtons {
+  position: absolute;
+  right: 2%
 }
+
+
 
 .buttons{
     display: flex;
     
 }
 .buttons button{
-    margin-left: 3em;
+    margin-left: 2em;
     padding: 15px;
     z-index: 9999;
     
@@ -89,7 +96,7 @@
 
 
 .dark button{
-    margin-left: 3em;
+    margin-left: 2em;
     padding: 15px;
     background-color: rgb(20, 20, 20);
     color: white;
@@ -245,8 +252,15 @@
 
 @media (min-width: 992px) and (max-width: 1500px){
   /* Estilos para pantallas con ancho mínimo de 992px */
+ 
+  
+  .buttons button{
+    margin-left: 10px;
+  }
+  
   .containerButtons{
-    margin-left: 17em;
+    margin-left: 15em;
+   
   }
 }
 

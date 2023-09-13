@@ -60,27 +60,22 @@
 }
 @media (min-width: 391px) and (max-width: 768px) {
   /* Estilos para pantallas con ancho máximo de 768px */
-  .container{
-        width: fit-content;
-        right: 0;
-        bottom: 0;
-    }
-
   .container button{
-        height: 3.2em;
-        width: 3.2em;
-    }
+      height: 3.2em;
+      width: 3.2em;
+      bottom: 2%;
+      right: 4%;
+  }
 
-    .container i{
-        font-size: 1.6em;
-    }
+  .container i{
+      font-size: 1.6em;
+  }
 
-    
+  .custom-toast{
+      height: 20px;
+      left: 100px;
 
-    .custom-toast{
-        top: -18px;
-        left: 90px
-    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
