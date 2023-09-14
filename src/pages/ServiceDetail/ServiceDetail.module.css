@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.services{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.service{
+    width: 20em;
+    height: 23em;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.service p{
+    background-color: black;
+    height: 5em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
