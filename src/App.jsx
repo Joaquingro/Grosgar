@@ -18,6 +18,7 @@ function App() {
 
   return (
     <>
+    <NavBar isDarkMode = {isDarkMode} handleDarkMode = {handleDarkMode} />
     <Whatsapp/>
     <Routes>
       <Route path={"/"} element={<Home isDarkMode = {isDarkMode} handleDarkMode = {handleDarkMode}/>} />

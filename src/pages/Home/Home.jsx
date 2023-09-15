@@ -11,7 +11,6 @@ import Contact from '../../components/Contact/Contact';
 function Home({isDarkMode, handleDarkMode}) {
   return (
     <div className={isDarkMode ? style.dark : style.white}>
-      <NavBar isDarkMode = {isDarkMode} handleDarkMode = {handleDarkMode} />
       <ImageContent/>
       <Info isDarkMode = {isDarkMode}/>
       <Process isDarkMode = {isDarkMode} />

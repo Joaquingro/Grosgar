@@ -116,25 +116,23 @@
   }
 
   .containerButtons{
-    margin-right: -3em;
-    margin-left: 3.5em;
     width: 100%;
-    height: max-content;
-    margin-top: -3em;
-    height: 100%;
     z-index: 9999;
+    margin-top: 25em;
     background-color: rgb(255, 255, 255, 0.5);
     padding: 6px;
     border-bottom-left-radius: 150px;
     border-top-left-radius: 150px;
+    margin-right: -1em;
+
   }
 
   .buttons button{
-    margin-top: -0.5em;
     background-color: rgb(255, 255, 255, 0.5);
     border: none;
     color: black;
     width: 7em;
+    margin-left: 5em;
 
   }
 
@@ -195,25 +193,23 @@
   }
 
   .containerButtons{
-    margin-right: -3em;
-    margin-left: 7.4em;
-    width: 30em;
-    height: max-content;
-    margin-top: -2em;
-    height: 100%;
+    width: 100%;
     z-index: 9999;
+    margin-top: 25em;
     background-color: rgb(255, 255, 255, 0.5);
     padding: 6px;
     border-bottom-left-radius: 150px;
     border-top-left-radius: 150px;
+    margin-right: -4.5em;
+
   }
 
   .buttons button{
-    margin-top: -0.5em;
     background-color: rgb(255, 255, 255, 0.5);
     border: none;
     color: black;
     width: 7em;
+    margin-left: 5em;
 
   }
 
