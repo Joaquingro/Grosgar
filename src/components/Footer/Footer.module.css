@@ -206,7 +206,27 @@
   
   @media (min-width: 992px) and (max-width: 1500px){
     /* Estilos para pantallas con ancho mínimo de 992px */
-   
+    .titleContainer{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .sonContainer{
+        width: 95%;
+    }
+
+    /*
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark2{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .dark1{
+        width: 95%;
+    }
   }
   
   

@@ -262,9 +262,46 @@
  @media (min-width: 768px) and (max-width: 992px) {
    /* Estilos para pantallas con ancho entre 768px y 992px */
  }
+
+ @media (min-width: 992px) and (max-width: 1200px) {
+    /* Estilos para pantallas con ancho entre 768px y 992px */
+    .container{
+        margin-top: 5em;
+    }
+
+    .containerServices div{
+        width: 27em;
+    }
+
+    /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+        margin-top: 5em;
+    }
+
+    .dark1 div{
+        width: 27em;
+    }
+}
  
- @media (min-width: 992px) and (max-width: 1500px){
+ @media (min-width: 1200px) and (max-width: 1500px){
    /* Estilos para pantallas con ancho mínimo de 992px */
-  
+    .container{
+        margin-top: 4em;
+    }
+    
+    /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+        margin-top: 4em;
+    }
  }
  

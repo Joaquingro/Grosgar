@@ -4,19 +4,6 @@ import Aos from "../../assets/Aos.jsx"
 
 export default function Info({isDarkMode}) {
 
-// JavaScript
-if (window.innerWidth <= 391) { // Define el ancho máximo para activar el carrusel
-  const swiperContainer = document.querySelector('container'); // Selecciona el contenedor actual
-
-  if (swiperContainer) {
-    const swiper = new Swiper(swiperContainer, {
-      slidesPerView: 'auto', // Opciones de Swiper según tu necesidad
-      // ...otras opciones...
-    });
-  }
-}
-
-
 
   return (
     <div className={isDarkMode ? style.dark : style.container}>

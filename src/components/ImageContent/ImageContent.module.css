@@ -164,8 +164,16 @@
 
   @media (min-width: 992px) and (max-width: 1500px){
     /* Estilos para pantallas con ancho mínimo de 992px */
+
+    .container{
+      background-attachment: local;
+      background-size: cover;
+    }
+
     .info{
-      margin-left: 3em;
-      width: 82.8em;
+      margin-left: 0;
+      width: 100%;
+      margin-right: 0;
+      
     }
   }
