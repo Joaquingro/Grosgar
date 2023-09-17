@@ -270,9 +270,16 @@
     }
 
     .containerServices div{
-        width: 27em;
+        width: 22.5em;
     }
 
+    .serviceContent p{
+        width: 16em;
+    }
+
+    .serviceContent i{
+        height: max-content;
+    }
     /**
     * ----------------------------------------
     * DARK MODE
@@ -284,7 +291,15 @@
     }
 
     .dark1 div{
-        width: 27em;
+        width: 22.5em;
+    }
+
+    .dark2 p{
+        width: 16em;
+    }
+
+    .dark2 i{
+        height: max-content;
     }
 }
  
@@ -292,6 +307,10 @@
    /* Estilos para pantallas con ancho mínimo de 992px */
     .container{
         margin-top: 4em;
+    }
+
+    .containerServices div{
+        width: 26em;
     }
     
     /**
@@ -302,6 +321,10 @@
 
     .dark{
         margin-top: 4em;
+    }
+
+    .dark1 div{
+        width: 26em;
     }
  }
  

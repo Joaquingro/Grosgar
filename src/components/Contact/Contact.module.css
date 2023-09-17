@@ -467,11 +467,67 @@
     }
  }
  
- @media (min-width: 768px) and (max-width: 992px) {
+ @media (min-width: 768px) and (max-width: 1200px) {
    /* Estilos para pantallas con ancho entre 768px y 992px */
+   .container{
+    height: 54em;
+    }
+
+    .title{
+        width: 80%;
+    }
+
+    .infoForm h1{
+        font-size: 1.5em;
+        width: 15em;
+    }
+
+    .formContent{
+        width: 95%;
+        margin-top: -10em;
+    }
+
+    .divided{
+        position: absolute;
+        right: 2%;
+        transform: scale(0.9);
+    }
+
+    .iconDiv{
+        transform: scale(0.9);
+    }
+
+    /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+        height: 54em;
+    }
+
+    .dark1{
+        width: 80%;
+    }
+
+    .dark3 h1{
+        font-size: 2em;
+        width: 15em;
+    }
+
+    .dark2{
+        width: 95%;
+        margin-top: -10em;
+
+    }
+
+    .dark6{
+        margin-left: -5em;
+    }
  }
  
- @media (min-width: 992px) and (max-width: 1500px) {
+ @media (min-width: 1200px) and (max-width: 1500px) {
     /* Estilos para pantallas con ancho entre 768px y 992px */
     .container{
         height: 54em;

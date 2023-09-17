@@ -317,11 +317,60 @@
     }   
  }
  
- @media (min-width: 768px) and (max-width: 992px) {
+ @media (min-width: 992px) and (max-width: 1200px) {
    /* Estilos para pantallas con ancho entre 768px y 992px */
+    .containerSon2{
+        margin-top: 8em;
+    }
+   
+    .containerSon img{
+        margin-left: 9em;
+    }
+    
+    .containerSon2 img{
+        margin-left: -8em;
+    }
+
+    .info{
+        margin-left: 3em;
+    }
+
+
+   .info p{
+        width: 25em;
+        margin-right: 10em;
+    }
+
+    .info2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .info2 h3{
+        width: 15em;
+    }
+
+    .info2 p{
+        width: 25em;
+        margin-right: 10em;
+    }
+
+    .info3{
+        margin-left: 1em;
+    }
+
+    .info3 h3{
+        width: 17em;
+    }
+
+    .info3 p{
+        width: 25em;
+        margin-right: 10em;
+    }
+   
  }
  
- @media (min-width: 992px) and (max-width: 1500px){
+ @media (min-width: 1200px) and (max-width: 1500px){
    /* Estilos para pantallas con ancho mínimo de 992px */
    
  }
