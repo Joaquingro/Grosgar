@@ -10,6 +10,9 @@ export default function Process({isDarkMode}) {
     
   return (
     <div className={isDarkMode? style.dark : style.container}>
+        <div className={style.titleProcess}>
+            <h3>Proceso de servicios</h3>
+        </div>
         <div 
         data-aos="zoom-in" 
         data-aos-duration="1000"

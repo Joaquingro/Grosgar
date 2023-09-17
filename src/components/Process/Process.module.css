@@ -7,6 +7,20 @@
     justify-content: space-around;
 }
 
+.titleProcess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -4em;
+}
+
+.titleProcess h3{
+    width: max-content;
+    background-color: rgb(211, 212, 213);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .containerSon{
     display: flex;
     flex-direction: row;

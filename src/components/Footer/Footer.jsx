@@ -15,9 +15,18 @@ function Footer({isDarkMode}) {
 
         <div className={isDarkMode ? style.dark4 : style.social}>
           <p>Siguenos en nuestras redes sociales</p>
-          <i className= {isDarkMode ? `bi bi-twitter ${style.dark5}` :`bi bi-twitter ${style.icons}`}></i>
-          <i className= {isDarkMode ? `bi bi-facebook ${style.dark6}` : `bi bi-facebook ${style.icon}`}></i>
-          <i className= {isDarkMode ? `bi bi-linkedin ${style.dark6}` : `bi bi-linkedin ${style.icon}`}></i>
+          
+          <a className={style.iconRedirect1} href="https://www.facebook.com/profile.php?id=100084660501983">
+            <i className= {isDarkMode ? `bi bi-facebook ${style.dark6}` : `bi bi-facebook ${style.icon}`}></i>
+          </a>
+
+          <a className={style.iconRedirect} href="https://twitter.com/ContaGrosGar">
+            <i className= {isDarkMode ? `bi bi-twitter ${style.dark5}` :`bi bi-twitter ${style.icons}`}></i>
+          </a>
+          
+          <a className={style.iconRedirect} href="">
+            <i className= {isDarkMode ? `bi bi-linkedin ${style.dark6}` : `bi bi-linkedin ${style.icon}`}></i>
+          </a>
         </div>
 
       </div>

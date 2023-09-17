@@ -2,14 +2,14 @@ import React from 'react'
 import style from "../ServiceDetail/ServiceDetail.module.css";
 import serviceInfo from './Service';
 
-export default function ServiceDetail() {
+export default function ServiceDetail({isDarkMode}) {
   return (
-    <div className={style.container}>
+    <div className={isDarkMode ? style.dark : style.container}>
         <h1>Nuestros Servicios</h1>
 
-        <div className={style.services}>
+        <div className={isDarkMode ? style.dark1 : style.services}>
           {serviceInfo && serviceInfo.map((service, index) => 
-          <div id={index} className={style.service}>
+          <div key={index} className={isDarkMode ? style.dark2 : style.service}>
             <p>{service.name}</p>
            </div>
           

@@ -8,7 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import Process from '../../components/Process/Process';
 import Contact from '../../components/Contact/Contact';
 
-function Home({isDarkMode, handleDarkMode}) {
+function Home({isDarkMode}) {
   return (
     <div className={isDarkMode ? style.dark : style.white}>
       <ImageContent/>

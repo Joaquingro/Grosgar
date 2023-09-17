@@ -39,11 +39,11 @@ function NavBar({isDarkMode, handleDarkMode}) {
             </li>
           </Link>
 
-          <Link to="/about">
+          {/* <Link to="/about">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#"><button type="button" className="btn btn-light">Nosotros</button></a>
             </li>
-          </Link>
+          </Link> */}
          <AnchorLink href="#contact">
             <li className="nav-item">
                <a className="nav-link active" aria-current="page"><button type="button" className="btn btn-success">Contáctanos</button></a>

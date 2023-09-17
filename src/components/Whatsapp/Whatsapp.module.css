@@ -84,4 +84,8 @@
 
 @media (min-width: 992px) and (max-width: 1500px) {
   /* Estilos para pantallas con ancho mínimo de 992px */
+
+    .custom-toast{
+      right: 15%;
+    }
 }
