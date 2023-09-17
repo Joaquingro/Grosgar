@@ -87,5 +87,6 @@
 
     .custom-toast{
       right: 15%;
+      position: absolute;
     }
 }
