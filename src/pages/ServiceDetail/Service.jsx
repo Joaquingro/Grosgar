@@ -1,37 +1,48 @@
-let serviceInfo = [
+let ServicioInfo = [
     {
-       name: "Service", 
+       name: "Servicio",
+       description: "Estamos trabajando en los mejores servicios para usted..."
     }, 
     {
-        name: "Service", 
+        name: "Servicio",
+        description: "Estamos trabajando en los mejores servicios para usted..." 
      }, 
      {
-        name: "Service", 
+        name: "Servicio",
+        description: "Estamos trabajando en los mejores servicios para usted..." 
      }, 
      {
-        name: "Service", 
+        name: "Servicio",
+        description: "Estamos trabajando en los mejores servicios para usted..." 
      }, 
      {
-        name: "Service", 
+        name: "Servicio",
+        description: "Estamos trabajando en los mejores servicios para usted..." 
      }, 
      {
-        name: "Service", 
+        name: "Servicio",
+        description: "Estamos trabajando en los mejores servicios para usted..." 
      }, 
      {
-         name: "Service", 
+         name: "Servicio",
+         description: "Estamos trabajando en los mejores servicios para usted..." 
       }, 
       {
-         name: "Service", 
+         name: "Servicio",
+         description: "Estamos trabajando en los mejores servicios para usted..." 
       }, 
       {
-         name: "Service", 
+         name: "Servicio", 
+         description: "Estamos trabajando en los mejores servicios para usted..." 
+
       }, 
       {
-         name: "Service", 
+         name: "Servicio", 
+         description: "Estamos trabajando en los mejores servicios para usted..." 
       }, 
  
 
 ]
 
 
-export default serviceInfo;
+export default ServicioInfo;

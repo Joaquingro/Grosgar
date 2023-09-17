@@ -50,6 +50,50 @@
  * DARK MODE
  * ----------------------------------------
  */
+ .dark{
+  background-image: url("../../assets/Inicio.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  height: 40em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+.dark1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 15.8em;
+  justify-content: space-between;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 87.4em;
+  justify-content: center;
+  height: auto;
+}
+
+.dark2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15em;
+  margin-left: 5em;
+  
+}
+
+.dark2 p{
+  width: 43em;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.dark2 h1{
+-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
 
 
 
@@ -93,7 +137,7 @@
  */
 
   
-  @media (max-width: 391px) {
+  @media (max-width: 448px) {
     .container{
       background-image: url(../../assets/responsive.jpg);
       background-attachment: local;
@@ -106,6 +150,8 @@
       margin-left: 0;
       height: 23.5em;
       text-align: center;
+      background-color: white;
+      color: black;
     }
 
     .infoSon{
@@ -122,23 +168,65 @@
       align-self: center
     }
 
+  /**
+  * ----------------------------------------
+  * DARK MODE
+  * ----------------------------------------
+  */
+
+  .dark{
+    background-image: url(../../assets/responsive.jpg);
+    background-attachment: local;
+    height: 61em;
+    margin-bottom: -27em;
+  }
+
+  .dark1{
+    width: 100%;
+    margin-left: 0;
+    height: 23.5em;
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    color: white;
+  }
+
+  .dark2{
+    margin-left: 0;
+    width: 100%;
+    padding: 4px;
+    margin-top: -2em;
+
+  }
+
+  .dark2 p{
+    width: 20em;
+    text-align: justify;
+    align-self: center
+  }
+
+  
     
   }
 
-  @media (min-width: 391px) and (max-width: 768px) {
+  @media (min-width: 448px) and (max-width: 768px) {
     /* Estilos para pantallas con ancho máximo de 768px */
     .container{
       background-image: url(../../assets/responsive.jpg);
       background-attachment: local;
-      height: 63.8em;
+      height: 70em;
       margin-bottom: -20em;
     }
 
     .info{
       width: 100%;
       margin-left: 0;
-      height: 23.5em;
+      height: 22.5em;
+      background-color: none;
       text-align: center;
+      background-color: white;
+      color: black;
+
+      
     }
 
     .infoSon{
@@ -150,16 +238,105 @@
     }
 
     .infoSon p{
-      width: 20em;
+      width: auto;
       text-align: justify;
-      align-self: center
+      align-self: center;
+      padding: 30px;
+    }
+  
+    /**  * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+  
+    .dark{
+      background-image: url(../../assets/responsive.jpg);
+      background-attachment: local;
+      height: 70em;
+      margin-bottom: -20em;
     }
 
+    .dark1{
+      width: 100%;
+      margin-left: 0;
+      height: 22.5em;
+      background-color: none;
+      text-align: center;
+      background-color: rgb(39, 39, 39);
 
+      color: white;
+
+      
+    }
+
+    .dark2{
+      margin-left: 0;
+      width: 100%;
+      padding: 4px;
+      margin-top: -2em;
+
+    }
+
+    .dark2 p{
+      width: auto;
+      text-align: justify;
+      align-self: center;
+      padding: 30px;
+    }
+
+    
   }
 
-  @media (min-width: 768px) and (max-width: 992px) {
+  @media (min-width: 769px) and (max-width: 992px) {
     /* Estilos para pantallas con ancho entre 768px y 992px */
+
+    .container{
+      background-attachment: local;
+      background-size: cover;
+    
+    }
+
+    .info{
+      width: 100%;
+      height: auto;
+      background-color: none;
+      text-align: justify;
+      margin-left: 0;
+      margin-right: 0;
+      align-items: center;    
+        
+    }
+
+    .infoSon p{
+      width: 30em;
+    }
+
+    /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+      background-attachment: local;
+      background-size: cover;
+    
+    }
+
+    .dark1{
+      width: 100%;
+      height: auto;
+      background-color: none;
+      text-align: justify;
+      margin-left: 0;
+      margin-right: 0;
+      align-items: center;    
+        
+    }
+
+    .dark2 p{
+      width: 30em;
+    }
   }
 
   @media (min-width: 992px) and (max-width: 1500px){
@@ -171,6 +348,24 @@
     }
 
     .info{
+      margin-left: 0;
+      width: 100%;
+      margin-right: 0;
+      
+    }
+
+     /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+      background-attachment: local;
+      background-size: cover;
+    }
+
+    .dark1{
       margin-left: 0;
       width: 100%;
       margin-right: 0;

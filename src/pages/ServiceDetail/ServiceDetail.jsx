@@ -10,7 +10,8 @@ export default function ServiceDetail({isDarkMode}) {
         <div className={isDarkMode ? style.dark1 : style.services}>
           {serviceInfo && serviceInfo.map((service, index) => 
           <div key={index} className={isDarkMode ? style.dark2 : style.service}>
-            <p>{service.name}</p>
+            <h3>{service.name}</h3>
+            <p>{service.description}</p>
            </div>
           
           )}

@@ -278,7 +278,7 @@
     }
    
 }
-@media (min-width: 391px) and (max-width: 768px) {
+@media (min-width: 392px) and (max-width: 630px) {
     /* Estilos para pantallas con ancho máximo de 768px */
     .container{
         flex-direction: column-reverse;
@@ -286,7 +286,7 @@
     }
 
     .containerSon{
-        transform: scale(0.55);
+        transform: scale(0.60);
         margin-top: -3em;
     }
 
@@ -329,7 +329,7 @@
     }
     
     .dark5 p{
-        width: 18em;
+        width: auto;
     }
     
    .dark5{
@@ -342,13 +342,75 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 631px) and (max-width: 1140px) {
   /* Estilos para pantallas con ancho entre 768px y 992px */
+  .container{
+    flex-direction: column-reverse;
+    height: max-content;
+}
+
+.containerSon{
+    margin-top: -1em;
+    transform: scale(0.9);
+}
+
+.info p{
+    width: auto;
+}
+
+.info{
+margin-left: 0;
+padding: 5px;
+}
+
+.benefitContent p{
+font-size: 30px;
+    }
+
+.button{
+    display: none;
+}
+
+/**
+* ----------------------------------------
+* DARK MODE
+* ----------------------------------------
+*/
+
+.dark{
+    flex-direction: column-reverse;
+    height: max-content;
+}
+
+.dark1{
+    transform: scale(0.9);
+    margin-top: -3em;
+}
+
+.dark3 p{
+    font-size: 30px;
+
+}
+
+.dark5 p{
+    width: auto;
+}
+
+.dark5{
+    margin-left: 0;
+    padding: 5px;
+}
+
+.dark6{
+    display: none;
+}
+
+
 }
 
 
 
-@media (min-width: 992px) and (max-width: 1500px){
+@media (min-width: 1141px) and (max-width: 1500px){
   /* Estilos para pantallas con ancho mínimo de 992px */
     .containerSon{
         transform: scale(0.9);
@@ -361,7 +423,7 @@
     }
 
     .info p{
-        width: 25em;
+        width: auto;
     }
 
      /**
@@ -381,7 +443,7 @@
     }
 
     .dark5 p{
-        width: 25em;
+        width: auto;
     }
 
 }

@@ -110,29 +110,30 @@
 
 @media (max-width: 391px) {
   .title{
-    transform: scale(0.6);
-    margin-left: -6em;
-    width: 100%;
+    transform: scale(0.55);
+    width: 10em;
   }
 
   .containerButtons{
     width: 100%;
     z-index: 9999;
-    margin-top: 25em;
-    background-color: rgb(255, 255, 255, 0.5);
+    top: 100%;
+    background-color: rgba(165, 164, 164, 0.5);
     padding: 6px;
     border-bottom-left-radius: 150px;
     border-top-left-radius: 150px;
-    margin-right: -1em;
+    right: 0;
+    
 
   }
 
   .buttons button{
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(12, 12, 12, 0.5);
     border: none;
-    color: black;
+    color: rgb(255, 255, 255);
     width: 7em;
     margin-left: 5em;
+  
 
   }
 
@@ -150,33 +151,24 @@
  */
 
  .dark button{
-  color: black;
+  color: rgb(255, 255, 255);
   border: none;
  }
  
  .dark1{
-   transform: scale(0.6);
-   margin-left: -6em;
-   width: 100%;
+   transform: scale(0.55);
+   width: 10em;
 
  }
   .dark2{
-    width: 1.5em;
-    height: 2.2em;
-    margin-right: 4px;
-    padding: 5px;
     background-color: white !important;
-   
-    
-    
+    height: 2em;
+    width: 2.8em;
   }
 
   .dark2 span{
-      margin-left: -14px;
-      margin-top: -10px;
-      font-size: 20px;
-     
-
+      margin-left: -2px;
+      margin-top: -15px;
 
   }  
 
@@ -185,7 +177,7 @@
 
   
 }
-@media (min-width: 391px) and (max-width: 768px) {
+@media (min-width: 392px) and (max-width: 550px) {
   /* Estilos para pantallas con ancho máximo de 768px */
   .title{
     transform: scale(0.6);
@@ -193,21 +185,23 @@
   }
 
   .containerButtons{
-    width: 100%;
+    width: 23em;
     z-index: 9999;
-    margin-top: 25em;
-    background-color: rgb(255, 255, 255, 0.5);
+    top: 100%;
+    background-color: rgba(165, 164, 164, 0.5);
     padding: 6px;
     border-bottom-left-radius: 150px;
     border-top-left-radius: 150px;
-    margin-right: -4.5em;
+    position: absolute;
+    right: 0;
+    
 
   }
 
   .buttons button{
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(12, 12, 12, 0.5);
     border: none;
-    color: black;
+    color: white;
     width: 7em;
     margin-left: 5em;
 
@@ -232,18 +226,84 @@
     margin-left: -7em;
   }
 
-  .dark2{
+    .dark2{
     background-color: white !important;
     height: 2em;
+    width: 2.8em;
   }
 
   .dark2 span{
-    margin-top: -10px;
-  }
+      margin-left: -2px;
+      margin-top: -15px;
+
+  }  
+
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 550px) and (max-width: 992px) {
   /* Estilos para pantallas con ancho entre 768px y 992px */
+
+  .title{
+    transform: scale(0.6);
+    margin-left: -7em;
+  }
+
+  .containerButtons{
+    width: 23em;
+    z-index: 9999;
+    top: 100%;
+    background-color: rgba(165, 164, 164, 0.5);
+    padding: 6px;
+    border-bottom-left-radius: 150px;
+    border-top-left-radius: 150px;
+    right: 0;
+    
+
+  }
+
+  .buttons{
+    position: relative;
+    right: 5%;
+  }
+  .buttons button{
+    background-color: rgba(12, 12, 12, 0.5);
+    border: none;
+    color: white;
+    width: 7em;
+    margin-left: 5em;
+
+  }
+
+  .darkMode{
+    width: 4em !important;
+    border-radius: 50px;
+
+  }
+ 
+
+  /**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+
+  
+  .dark1{
+    transform: scale(0.6);
+    margin-left: -7em;
+  }
+
+    .dark2{
+    background-color: white !important;
+    height: 2em;
+    width: 2.8em;
+  }
+
+  .dark2 span{
+      margin-left: -2px;
+      margin-top: -15px;
+
+  }  
 }
 
 @media (min-width: 992px) and (max-width: 1500px){

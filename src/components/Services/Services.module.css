@@ -259,11 +259,66 @@
     }
  }
  
- @media (min-width: 768px) and (max-width: 992px) {
+ @media (min-width: 769px) and (max-width: 992px) {
    /* Estilos para pantallas con ancho entre 768px y 992px */
+
+   .container{
+        margin-top: -20em;
+    }
+
+    .containerServices div{
+        width: 15em;
+        border-radius: 150px;
+    }
+
+    .containerServices h5{
+        margin-top: 1em;
+        width: 8em;
+        text-align: center;
+    }
+
+    .serviceContent p{
+        width: 16em;
+        display: none;
+    }
+
+    .serviceContent i{
+        height: max-content;
+    }
+    /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+        margin-top: -20em;
+    }
+
+    .dark1 div{
+        width: 15em;
+        border-radius: 150px;
+
+    }
+
+    .dark1 h5{
+        margin-top: 1em;
+        width: 8em;
+        text-align: center;
+    }
+
+    .dark2 p{
+        width: 16em;
+        display: none;
+
+    }
+
+    .dark2 i{
+        height: max-content;
+    }
  }
 
- @media (min-width: 992px) and (max-width: 1200px) {
+ @media (min-width: 993px) and (max-width: 1200px) {
     /* Estilos para pantallas con ancho entre 768px y 992px */
     .container{
         margin-top: 5em;

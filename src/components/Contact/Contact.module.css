@@ -467,7 +467,88 @@
     }
  }
  
- @media (min-width: 768px) and (max-width: 1200px) {
+ @media (min-width: 769px) and (max-width: 975px) {
+    /* Estilos para pantallas con ancho entre 768px y 992px */
+    .container{
+        height: 54em;
+     }
+ 
+     .title{
+         width: 80%;
+     }
+
+     .title h3{
+        text-align: center;
+        font-size: 1.4em;
+     }
+ 
+     .infoForm h1{
+         font-size: 2em;
+         width: 15em;
+         text-align: center;
+     }
+ 
+     .formContent{
+         width: 95%;
+         margin-top: -10em;
+         justify-content: center;
+     }
+ 
+     .divided{
+         position: absolute;
+         right: 2%;
+         transform: scale(0.9);
+         display: none;
+     }
+ 
+     .iconDiv{
+         transform: scale(1);
+         width: auto;
+
+    }
+     
+ 
+     /**
+     * ----------------------------------------
+     * DARK MODE
+     * ----------------------------------------
+     */
+ 
+     .dark{
+         height: 54em;
+     }
+ 
+     .dark1{
+         width: 80%;
+     }
+
+     .dark1 h3{
+        text-align: center;
+        font-size: 1.4em;
+     }
+ 
+     .dark3 h1{
+         font-size: 2em;
+         width: 15em;
+     }
+ 
+     .dark2{
+         width: 95%;
+         margin-top: -10em;
+         justify-content: center;
+
+        
+     }
+ 
+     .dark6{
+         margin-left: -5em;
+         display: none;
+     }
+  }
+
+
+
+ @media (min-width: 976px) and (max-width: 1200px) {
    /* Estilos para pantallas con ancho entre 768px y 992px */
    .container{
     height: 54em;
@@ -476,6 +557,10 @@
     .title{
         width: 80%;
     }
+
+    .title h3{
+        text-align: center;
+     }
 
     .infoForm h1{
         font-size: 1.5em;
@@ -510,6 +595,10 @@
     .dark1{
         width: 80%;
     }
+
+    .dark1 h3{
+        text-align: center;
+     }
 
     .dark3 h1{
         font-size: 2em;
@@ -548,7 +637,8 @@
     }
 
     .divided{
-        margin-left: 0em;
+        position: absolute;
+        right: 2%;
     }
 
     /**
@@ -577,7 +667,8 @@
     }
 
     .dark6{
-        margin-left: 0em;
+        position: absolute;
+        right: 2%;
     }
 
 }

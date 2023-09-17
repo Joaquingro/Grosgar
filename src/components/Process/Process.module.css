@@ -235,7 +235,7 @@
     }    
         
  }
- @media (min-width: 391px) and (max-width: 768px) {
+ @media (min-width: 391px) and (max-width: 530px) {
    /* Estilos para pantallas con ancho máximo de 768px */
    .container{
     height: 124em;
@@ -316,7 +316,90 @@
         margin-bottom: 30em;
     }   
  }
+
  
+ @media(min-width: 531px) and (max-width: 991px){
+    .container{
+        height: 130em;
+        align-items: center;
+        margin-bottom: 30em;
+        }    
+    
+        .containerSon{
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .containerSon2{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    
+        .containerSon img{
+            transform: scale(0.85);
+            margin-top: -4em;
+    
+        }
+    
+        .containerSon2 img{
+            transform: scale(0.85);
+            margin-top: -8em;
+        }
+    
+        .info{
+            margin-left: 0;
+            margin-top: -2em;
+            margin-bottom: 11em;
+            transform: scale(0.95);
+        }
+    
+        .step1{
+            width: 28em;
+        }
+    
+    
+        .info2{
+            margin-top: -2.5em;
+            margin-bottom: -5em;
+            margin-right: 0;
+            transform: scale(0.9);
+        }
+    
+        .info2 h3{
+            width: 15em;
+        }
+    
+        .info3{
+            margin-left: 0;
+            margin-top: -3em;
+            transform: scale(0.9);
+        }
+    
+        .info3 h3{
+            width: 17em;
+        }
+    
+        .imgInfo3{
+            margin-top: -10em;
+            margin-bottom: 1em;
+        }
+    
+        .titleProcess{
+            margin-top: -4em;
+        }
+          /*
+        * ----------------------------------------
+        * DARK MODE
+        * ----------------------------------------
+        */
+    
+        .dark{
+            height: 124em;
+            align-items: center;
+            margin-bottom: 30em;
+        }   
+    
+ }
  @media (min-width: 992px) and (max-width: 1200px) {
    /* Estilos para pantallas con ancho entre 768px y 992px */
     .containerSon2{
