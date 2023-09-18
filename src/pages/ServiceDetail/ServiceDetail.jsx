@@ -12,6 +12,7 @@ export default function ServiceDetail({isDarkMode}) {
           <div key={index} className={isDarkMode ? style.dark2 : style.service}>
             <h3>{service.name}</h3>
             <p>{service.description}</p>
+            <div className={isDarkMode ? style.dark3 : style.loader}></div>
            </div>
           
           )}
