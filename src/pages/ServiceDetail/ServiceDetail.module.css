@@ -194,3 +194,137 @@
     background: black;
   }
 
+
+  @media (max-width: 448px) {
+    .container{
+      
+      display: none;
+    }
+
+    
+
+  
+
+  /**
+  * ----------------------------------------
+  * DARK MODE
+  * ----------------------------------------
+  */
+
+  .dark{
+   
+  }
+
+  .dark1{
+   
+  }
+
+  .dark2{
+   
+
+  }
+
+  .dark2 p{
+   
+  }
+
+  
+    
+  }
+
+  @media (min-width: 448px) and (max-width: 768px) {
+    /* Estilos para pantallas con ancho máximo de 768px */
+    .container{
+      display: none;
+    }
+
+
+   
+
+    
+  
+    /**  * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+  
+    .dark{
+      
+    }
+
+    .dark1{
+   
+
+      
+    }
+
+    .dark2{
+     
+
+    }
+
+    .dark2 p{
+      
+    }
+
+    
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    /* Estilos para pantallas con ancho entre 768px y 992px */
+.container{
+  display: none;
+}
+   
+
+   
+
+    /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+     
+    
+    }
+
+    .dark1{
+     
+         
+        
+    }
+
+    .dark2 p{
+      
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1500px){
+    /* Estilos para pantallas con ancho mínimo de 992px */
+
+    .container{
+      display: none;
+    }
+
+    .info{
+      
+      
+    }
+
+     /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+    .dark{
+      
+    }
+
+    .dark1{
+      
+      
+    }
+  }
