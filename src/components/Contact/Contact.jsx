@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import style from "../Contact/Contact.module.css";
-import Background from '../Background/Background';
 
 export default function Contact({isDarkMode, id}) {
   

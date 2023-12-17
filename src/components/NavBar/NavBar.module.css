@@ -44,7 +44,7 @@
 }
 
 .title img{
-    width: 13.5em;
+    width: 10em;
 }
 
 .title h1{
@@ -52,7 +52,6 @@
     border-bottom: 2px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     margin-top: -0.5em;
-    font-size: 3.5em;
 }
 
 
@@ -81,7 +80,7 @@
 }
 
 .dark1 img{
-    width: 13.5em;
+    width: 10em;
     background-color: white;
     clip-path: circle(40%);
 }
@@ -91,7 +90,6 @@
     border-bottom: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     margin-top: -0.5em;
-    font-size: 3.5em;
 }
 
 
@@ -112,6 +110,15 @@
   .title{
     transform: scale(0.55);
     width: 10em;
+
+  }
+
+  .title h1{
+    font-size: 3em;
+  }
+
+  .title img{
+    font-size: 1.1em;
   }
 
   .containerButtons{
@@ -160,6 +167,15 @@
    width: 10em;
 
  }
+
+ .dark1 h1{
+  font-size: 3em;
+}
+
+.dark1 img{
+  font-size: 1.1em;
+}
+
   .dark2{
     background-color: white !important;
     height: 2em;
@@ -182,6 +198,14 @@
   .title{
     transform: scale(0.6);
     margin-left: -7em;
+  }
+  
+  .title h1{
+    font-size: 3em;
+  }
+
+  .title img{
+    font-size: 1.1em;
   }
 
   .containerButtons{
@@ -226,6 +250,14 @@
     margin-left: -7em;
   }
 
+  .dark1 h1{
+    font-size: 3em;
+  }
+
+  .dark1 img{
+    font-size: 1.1em;
+  }
+
     .dark2{
     background-color: white !important;
     height: 2em;
@@ -245,9 +277,16 @@
 
   .title{
     transform: scale(0.6);
-    margin-left: -7em;
+    margin-left: -5em;
   }
 
+  .title h1{
+    font-size: 3em;
+  }
+
+  .title img{
+    font-size: 1.1em;
+  }
   .containerButtons{
     width: 23em;
     z-index: 9999;
@@ -290,7 +329,15 @@
   
   .dark1{
     transform: scale(0.6);
-    margin-left: -7em;
+    margin-left: -5em;
+  }
+
+  .dark1 h1{
+    font-size: 3em;
+  }
+
+  .dark1 img{
+    font-size: 1.1em;
   }
 
     .dark2{

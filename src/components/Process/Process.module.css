@@ -14,11 +14,11 @@
     margin-bottom: -4em;
 }
 
-.titleProcess h3{
+.titleProcess h1{
     width: max-content;
-    background-color: rgb(211, 212, 213);
     padding: 10px;
     border-radius: 10px;
+    color: white;
 }
 
 .containerSon{
