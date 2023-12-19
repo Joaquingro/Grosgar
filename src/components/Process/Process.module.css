@@ -221,6 +221,11 @@
     .titleProcess{
         margin-top: -4em;
     }
+
+    .titleProcess h1{
+        font-size: 1.8em;
+        width: 100%;
+    }
     
     /*
     * ----------------------------------------

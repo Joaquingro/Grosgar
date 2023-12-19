@@ -173,25 +173,41 @@
 
 
   @media (min-width: 360px) and (max-width: 447px) {
-    .service {
-      width: 18em;
+    .container{
+      padding: 15px;
+
     }
-  }
+
+    .service {
+      width: 20em;
+    }
+
+    
+  
 
   /**  * ----------------------------------------
     * DARK MODE
     * ----------------------------------------
     */
+    .dark{
+      padding: 15px;
+      
+    }
 
     .dark2{
-      width: 18em;
+      width: 20em;
 
     }
-    
+ }   
 
   @media (min-width: 448px) and (max-width: 768px) {
     /* Estilos para pantallas con ancho máximo de 768px */
-   
+    .container{
+      padding: 15px;
+      text-align: center;
+
+    }
+
     .service{
       width: 20em;
     }
@@ -202,6 +218,12 @@
     * ----------------------------------------
     */
 
+    .dark{
+      padding: 15px;
+      text-align: center;
+
+    }
+
     .dark2{
      width: 20em;
 
@@ -210,10 +232,14 @@
 
   @media (min-width: 769px) and (max-width: 992px) {
     /* Estilos para pantallas con ancho entre 768px y 992px */
-  
-  .service{
-    width: 20em;
-  }
+    .container{
+      text-align: center;
+      padding: 15px;
+    }
+
+    .service{
+      width: 20em;
+    }
    
 
     /**
@@ -221,14 +247,22 @@
     * DARK MODE
     * ----------------------------------------
     */
-  .dark2{
+    .dark{
+      text-align: center;
+      padding: 15px;
+      
+    }
+
+    .dark2{
     width: 20em;
-  }
+    }
   }
 
   @media (min-width: 993px) and (max-width: 1500px){
     /* Estilos para pantallas con ancho mínimo de 992px */
-
+    .container{
+      padding: 15px;
+    }
     .service{
       width: 25em;
     }
@@ -239,8 +273,11 @@
     * DARK MODE
     * ----------------------------------------
     */
-
-  .dark2{
-    width: 25em;
-  }
+    .dark{
+      padding: 15px;
+    }
+    
+    .dark2{
+      width: 25em;
+    }
   }
