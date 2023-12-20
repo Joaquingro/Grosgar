@@ -89,7 +89,8 @@ function DrawerAppBar(props) {
           >
            <div style={{ display: 'flex', alignItems: 'center' }}>
             <img src={logo} alt="Logo" style={{ marginRight: '8px', width: "76px", backgroundColor: "white", clipPath: "circle(40%)" }} />
-            Grosgar
+          <span style={{ color: isDarkMode ? 'white' : 'black' }}>Grosgar</span>
+            
           </div>
           </Typography>
           
