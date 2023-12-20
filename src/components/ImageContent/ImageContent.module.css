@@ -1,3 +1,7 @@
+.fatherContainer{
+  margin-top: 5em;
+}
+
 .container{
     background-image: url("../../assets/Inicio.jpg");
     background-attachment: fixed;
@@ -130,6 +134,10 @@
 
   
   @media (max-width: 448px) {
+    .fatherContainer{
+      margin-top: 3em;
+    }
+
     .container{
       background-image: url(../../assets/responsive.jpg);
       background-attachment: local;

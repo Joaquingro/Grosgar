@@ -18,6 +18,25 @@ const handleInput = (event) => {
 
 }
 
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const { message } = inputs;
+  const subject = 'Nuevo mensaje de formulario de contacto';
+  const body = message;
+
+
+
+ setTimeout(() => {
+    setInputs({
+      name: "",
+      email: "",
+      message: "",
+    })
+ }, 1000);
+};
+
+
+
   return (
     <div className={isDarkMode ? style.dark : style.container}>
         <div className={isDarkMode ? style.dark1 : style.title}>
@@ -52,6 +71,9 @@ const handleInput = (event) => {
         <div className={isDarkMode ? style.dark6 : style.divided}>
           <h1>Asesoramiento Gratuito</h1>
           <p>¿Tienes alguna duda? Háznolos saber</p>
+          {/* <form 
+          onSubmit={handleSubmit}
+          class={"row g-3 needs-validation"} novalidate> */}
           <div className={isDarkMode ? style.dark7 : style.formFather}>
                 <div className={isDarkMode ? style.dark8 : style.formContainer}>
                     <input 
@@ -61,6 +83,7 @@ const handleInput = (event) => {
                     value = {inputs.name} 
                     onChange={handleInput}
                     placeholder="Tu nombre"
+                    required
                     >
                     </input>
                 </div>
@@ -71,7 +94,8 @@ const handleInput = (event) => {
                     type="email" 
                     value = {inputs.email} 
                     onChange={handleInput}
-                    id="exampleFormControlInput1" placeholder="name@example.com">
+                    id="exampleFormControlInput1" placeholder="name@example.com"
+                    required>
                     </input>
                 </div>  
             </div>
@@ -83,11 +107,18 @@ const handleInput = (event) => {
                 value = {inputs.message} 
                 onChange={handleInput}
                 placeholder="Cuéntame acerca de tu consulta..."
-                
+                required
                 ></textarea>
             </div>
         
-            <button type="submit" className={isDarkMode ? `btn btn-secondary ${style.dark10}` : `btn btn-secondary ${style.send}`}>Enviar</button>
+            <button 
+            type="submit" 
+            className={isDarkMode ? 
+            `btn btn-secondary ${style.dark10}` : 
+            `btn btn-secondary ${style.send}`}
+            
+            >Enviar</button>
+            {/* </form> */}
             </div>
         </div>
 

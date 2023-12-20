@@ -155,7 +155,7 @@
 
  @media (max-width: 391px) {
     .container{
-        height: 124em;
+        height: 132em;
         align-items: center;
         margin-bottom: 30em;
     }    
@@ -235,7 +235,7 @@
     */
 
     .dark{
-        height: 124em;
+        height: 132em;
         align-items: center;
         margin-bottom: 30em;
     }    
