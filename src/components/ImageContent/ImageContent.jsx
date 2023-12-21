@@ -4,7 +4,7 @@ import style from "../ImageContent/ImageContent.module.css";
 export default function ImageContent({isDarkMode}) {
 
   return (
-  <div className={style.fatherContainer}>
+  <div  className={style.fatherContainer}>
       <div className={isDarkMode ? style.dark : style.container}>
         <div className={isDarkMode ? style.dark1 : style.info}>
           <div className={isDarkMode ? style.dark2 : style.infoSon}>

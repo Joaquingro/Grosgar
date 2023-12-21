@@ -134,40 +134,60 @@
 
   
   @media (max-width: 448px) {
-    .fatherContainer{
-      margin-top: 3em;
+    .fatherContainer {
+      margin-top: 3.5em;
+      padding: 10px;
+      position: relative; /* Añade esta línea */
     }
-
-    .container{
-      background-image: url(../../assets/responsive.jpg);
-      background-attachment: local;
+    
+    .container {
+      background-image: url(../../assets/responsive_back.jpg);
+      background-attachment: initial;
+      background-size: cover ;
       height: 61em;
-      margin-bottom: -27em;
+      margin-bottom: -1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 10px; 
+      height: 45em;     
     }
-
-    .info{
+    
+    .info {
       width: 100%;
+      height: 100%;
+      background-color: transparent;
+      bottom: 0; /* Añade esta línea */
+      color: white;
       margin-left: 0;
-      height: 23.5em;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px; 
       text-align: center;
-      background-color: white;
-      color: black;
-    }
+      
 
-    .infoSon{
+    }
+    
+    .infoSon {
       margin-left: 0;
       width: 100%;
       padding: 4px;
-      margin-top: -2em;
-
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
     }
 
-    .infoSon p{
-      width: 20em;
+    
+    
+    .infoSon p {
+      width: 100%;
       text-align: justify;
-      align-self: center
+      align-self: center;
+      background-color: rgb(255, 255, 255, 0.8);
+      color: black;
+      
     }
-
+    
+  
   /**
   * ----------------------------------------
   * DARK MODE
@@ -175,33 +195,46 @@
   */
 
   .dark{
-    background-image: url(../../assets/responsive.jpg);
-    background-attachment: local;
+    background-image: url(../../assets/responsive_back.jpg);
+    background-attachment: initial;
+    background-size: cover ;
     height: 61em;
-    margin-bottom: -27em;
+    margin-bottom: -1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px; 
+    height: 45em;     
   }
 
   .dark1{
     width: 100%;
-    margin-left: 0;
-    height: 23.5em;
-    text-align: center;
-    background-color: rgb(39, 39, 39);
-    color: white;
+      height: 100%;
+      background-color: transparent;
+      bottom: 0; /* Añade esta línea */
+      color: white;
+      margin-left: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px; 
+      text-align: center;
   }
 
   .dark2{
     margin-left: 0;
     width: 100%;
     padding: 4px;
-    margin-top: -2em;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
 
   }
 
   .dark2 p{
-    width: 20em;
-    text-align: justify;
-    align-self: center
+    width: 100%;
+      text-align: justify;
+      align-self: center;
+      background-color: rgb(255, 255, 255, 0.8);
+      color: black;
   }
 
   

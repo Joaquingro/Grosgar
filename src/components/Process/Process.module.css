@@ -224,7 +224,7 @@
     }
 
     .titleProcess h1{
-        font-size: 1.8em;
+        font-size: 1.5em;
         width: 100%;
     }
     
@@ -244,7 +244,7 @@
  @media (min-width: 391px) and (max-width: 530px) {
    /* Estilos para pantallas con ancho máximo de 768px */
    .container{
-    height: 124em;
+    height: 140em;
     align-items: center;
     margin-bottom: 30em;
     }    
@@ -305,6 +305,10 @@
 
     .imgInfo3{
         margin-top: -10em;
+    }
+    .titleProcess h1{
+        font-size: 1.5em;
+        width: 100%;
     }
 
     .titleProcess{

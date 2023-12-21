@@ -24,7 +24,7 @@ const drawerWidth = 240;
 const navItems = ['Inicio', 'Servicios'];
 
 function DrawerAppBar(props) {
-  const { window, isDarkMode, handleDarkMode } = props;
+  const { window, isDarkMode, handleDarkMode, id } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -59,7 +59,7 @@ function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{display: 'flex' }}>
+    <Box id= {id} sx={{display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav"
         sx={{
@@ -188,11 +188,7 @@ export default DrawerAppBar;
 //             </li>
 //           </Link>
 
-//          <AnchorLink href="#contact">
-//             <li className="nav-item">
-//                <a className="nav-link active" aria-current="page"><button type="button" className="btn btn-success">Contáctanos</button></a>
-//             </li>
-//           </AnchorLink>
+//          
 //         </ul>
 //       </div>
 //     </div>

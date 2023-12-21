@@ -10,6 +10,7 @@
 
 .container p{
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .containerServices{
@@ -75,6 +76,7 @@
 
 .dark p{
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .dark1{
@@ -128,7 +130,7 @@
 
  @media (max-width: 391px) {
     .container{
-        margin-top: -33em;
+        margin-top: -35em;
     }
 
    
@@ -164,7 +166,7 @@
     */
 
     .dark{
-        margin-top: -33em;
+        margin-top: -35em;
     }
 
     .dark2 p{
@@ -196,7 +198,7 @@
  @media (min-width: 391px) and (max-width: 768px) {
    /* Estilos para pantallas con ancho máximo de 768px */
    .container{
-    margin-top: -33em;
+    margin-top: -35em;
     }
 
     .serviceContent p{
@@ -231,7 +233,7 @@
     */
 
     .dark{
-        margin-top: -33em;
+        margin-top: -35em;
     }
 
     .dark2 p{
@@ -264,9 +266,10 @@
    /* Estilos para pantallas con ancho entre 768px y 992px */
 
    .container{
-        margin-top: -20em;
+        margin-top: -25em;
     }
 
+    
     .containerServices div{
         width: 15em;
         border-radius: 150px;
@@ -293,7 +296,7 @@
     */
 
     .dark{
-        margin-top: -20em;
+        margin-top: -25em;
     }
 
     .dark1 div{

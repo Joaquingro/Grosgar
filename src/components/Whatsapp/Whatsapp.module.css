@@ -4,7 +4,7 @@
     width: 100%;
   }
   
-  .container button {
+  .button {
     height: 3.5em;
     width: 3.5em;
     border-radius: 50%;
@@ -14,7 +14,21 @@
     bottom: 5%;
   }
   
-  .container i {
+  .upArrow{
+    height: 4.2em;
+    width: 4.2em;
+    border-radius: 50%;
+    position: fixed; 
+    z-index: 9999;
+    right: 10%;
+    bottom: 5%;
+  }
+
+  .upArrow i{
+    font-size: 2em;
+  }
+
+  .button i {
     font-size: 1.5em;
   }
   
@@ -33,6 +47,16 @@
     bottom: 15px;
   }
   
+  .visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+  }
 /*
  * ----------------------------------------
  * RESPONSIVE
@@ -41,11 +65,18 @@
 
 @media (max-width: 391px) {
    
-    .container button{
+    .button{
         height: 3.2em;
         width: 3.2em;
         bottom: 2%;
         right: 4%;
+    }
+
+    .upArrow{
+      height: 4em;
+      width: 4em;
+      bottom: 2%;
+      right: 22%;
     }
 
     .container i{
@@ -60,11 +91,18 @@
 }
 @media (min-width: 391px) and (max-width: 765px) {
   /* Estilos para pantallas con ancho máximo de 768px */
-  .container button{
+  .button{
       height: 3.2em;
       width: 3.2em;
       bottom: 2%;
       right: 4%;
+  }
+
+  .upArrow{
+    height: 4em;
+    width: 4em;
+    bottom: 2%;
+    right: 18%;
   }
 
   .container i{
@@ -85,6 +123,20 @@
     position: absolute;
     bottom: 5%;
   }
+
+  .button{
+    height: 3.2em;
+    width: 3.2em;
+    bottom: 2%;
+    right: 4%;
+}
+  .upArrow{
+    height: 4em;
+    width: 4em;
+    bottom: 2%;
+    right: 12%;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1500px) {

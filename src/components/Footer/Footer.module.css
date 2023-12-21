@@ -156,6 +156,10 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .title h1{
+        font-size: 2em;
+    }
   
   /*
    * ----------------------------------------
@@ -167,7 +171,11 @@
         flex-direction: column;
         text-align: center;
     }
-  
+    
+    .dark3 h1{
+        font-size: 2em;
+
+    }
     
   }
   @media (min-width: 391px) and (max-width: 768px) {
@@ -176,6 +184,10 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .title h1{
+        font-size: 2em;
+    }
   
   /*
    * ----------------------------------------
@@ -186,6 +198,11 @@
     .dark2{
         flex-direction: column;
         text-align: center;
+    }
+
+    .dark3 h1{
+        font-size: 2em;
+
     }
   
   }
