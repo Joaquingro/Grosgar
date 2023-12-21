@@ -226,7 +226,9 @@
     }
 
     .info p{
-        width: 18em;
+        width: auto;
+        font-size: 1em;
+
     }
     .benefitContent p{
         font-size: 30px;
@@ -236,6 +238,11 @@
     margin-left: 0;
     padding: 5px;
     text-align: center;
+    
+   }
+
+   .info h1{
+    font-size: 1.5em;
    }
 
     .button{
@@ -264,8 +271,13 @@
     }
 
     .dark5 p{
-        width: 18em;
+        width: auto;
+        font-size: 1em;
     }
+
+    .dark5 h1{
+        font-size: 1.5em;
+       }
     
    .dark5{
         margin-left: 0;

@@ -175,6 +175,14 @@
       display: flex;
       justify-content: space-evenly;
     }
+    
+    .infoSon h1{
+      font-size: 1.2em;
+    }
+
+    .infoSon h4{
+      font-size: 1.4;
+    }
 
     
     
@@ -184,6 +192,7 @@
       align-self: center;
       background-color: rgb(255, 255, 255, 0.8);
       color: black;
+      font-size: 1em;
       
     }
     
@@ -229,12 +238,22 @@
 
   }
 
+  .dark2 h1{
+    font-size: 1.2em;
+  }
+
+  .dark2 h4{
+    font-size: 1.4;
+  }
+
   .dark2 p{
     width: 100%;
       text-align: justify;
       align-self: center;
       background-color: rgb(255, 255, 255, 0.8);
       color: black;
+      font-size: 1em;
+
   }
 
   

@@ -66,26 +66,33 @@
 @media (max-width: 391px) {
    
     .button{
-        height: 3.2em;
-        width: 3.2em;
+        height: 2.8em;
+        width: 2.8em;
         bottom: 2%;
         right: 4%;
     }
 
-    .upArrow{
-      height: 4em;
-      width: 4em;
-      bottom: 2%;
-      right: 22%;
+    .button i{
+      text-align: center;
+      font-size: 1em;
+
     }
 
-    .container i{
-        font-size: 1.6em;
+    .upArrow{
+      height: 3.4em;
+      width: 3.4em;
+      bottom: 2%;
+      right: 18%;
     }
+
+    .upArrow i{
+      font-size: 1.5em;
+    }
+
 
     .custom-toast{
-        height: 20px;
-        left: 50px;
+        height: 15px;
+        left: 60px;
 
     }
 }
