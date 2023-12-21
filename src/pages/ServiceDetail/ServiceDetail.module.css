@@ -180,10 +180,19 @@
 
     }
 
+    .container h1{
+      font-size: 1.4em;
+    }
+
+    .container p{
+      font-size: 1em;
+    }
+
     .service {
       width: 20em;
     }
 
+   
     
   
 
@@ -195,6 +204,14 @@
       padding: 15px;
       margin-top: 3.2em;
       
+    }
+
+    .dark h1{
+      font-size: 1.4em;
+    }
+
+    .dark p{
+      font-size: 1em;
     }
 
     .dark2{
