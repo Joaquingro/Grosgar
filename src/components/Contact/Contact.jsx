@@ -18,22 +18,7 @@ const handleInput = (event) => {
 
 }
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  const { message } = inputs;
-  const subject = 'Nuevo mensaje de formulario de contacto';
-  const body = message;
 
-
-
- setTimeout(() => {
-    setInputs({
-      name: "",
-      email: "",
-      message: "",
-    })
- }, 1000);
-};
 
 
 
@@ -71,10 +56,13 @@ const handleSubmit = (e) => {
         <div className={isDarkMode ? style.dark6 : style.divided}>
           <h1>Asesoramiento Gratuito</h1>
           <p>¿Tienes alguna duda? Háznolos saber</p>
-          {/* <form 
-          onSubmit={handleSubmit}
-          class={"row g-3 needs-validation"} novalidate> */}
+
           <div className={isDarkMode ? style.dark7 : style.formFather}>
+
+          <form 
+          action="https://formspree.io/f/mleqrpva" method="POST"
+         novalidate>
+          <div className={style.containerNames}>
                 <div className={isDarkMode ? style.dark8 : style.formContainer}>
                     <input 
                     className = "form-control form-control-lg" 
@@ -118,7 +106,8 @@ const handleSubmit = (e) => {
             `btn btn-secondary ${style.send}`}
             
             >Enviar</button>
-            {/* </form> */}
+            </form>
+            </div>
             </div>
         </div>
 

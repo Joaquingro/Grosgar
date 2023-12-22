@@ -13,6 +13,7 @@
 .divided{
     margin-left: 10em;
     padding: 25px;
+    right: 8%;
     
 }
 
@@ -121,6 +122,9 @@
     margin-top: 3em;
 }
 
+.containerNames{
+    display: flex;
+}
 /**
  * ----------------------------------------
  * DARK MODE
@@ -638,9 +642,9 @@
 
     .divided{
         position: absolute;
-        right: 2%;
     }
 
+    
     /**
     * ----------------------------------------
     * DARK MODE

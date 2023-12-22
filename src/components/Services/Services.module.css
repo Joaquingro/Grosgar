@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: flex-start;
     margin-right: 1em;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: rgb(81, 87, 95);
     color: white;
     padding: 13px;
@@ -47,6 +47,7 @@
 .serviceContent p{
     width: 20em;
     margin-left: 1em;
+    
 }
 
 .serviceContent i{
@@ -54,6 +55,7 @@
     border: 1px solid white;
     padding: 5px;
     border-radius: 10px;
+    height: min-content;
 }
 
 /**
@@ -95,7 +97,7 @@
     align-items: center;
     justify-content: flex-start;
     margin-right: 1em;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: rgb(211, 212, 213);
     color: black;
     padding: 13px;
@@ -120,6 +122,8 @@
     border: 1px solid black;
     padding: 5px;
     border-radius: 10px;
+    height: min-content;
+
 }
 
 /*
@@ -378,6 +382,15 @@
 
     .containerServices div{
         width: 26em;
+        
+    }
+
+    .serviceContent{
+        padding: 10px;
+    }
+
+    .serviceContent p{
+        width: auto;
     }
     
     /**
@@ -392,6 +405,14 @@
 
     .dark1 div{
         width: 26em;
+    }
+
+    .dark2{
+        padding: 10px;
+    }
+
+    .dark2 p{
+        width: auto;
     }
  }
  
