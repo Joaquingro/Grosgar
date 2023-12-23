@@ -391,7 +391,7 @@
     }
   }
 
-  @media (min-width: 992px) and (max-width: 1500px){
+  @media (min-width: 992px) and (max-width: 1920px){
     /* Estilos para pantallas con ancho mínimo de 992px */
 
     .container{
