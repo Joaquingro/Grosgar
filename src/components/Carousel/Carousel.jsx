@@ -60,7 +60,11 @@ export default function App() {
             transition: 'transform 0.3s',
            
           }}>
-            <img className={styles.imgSwiper} src={image} />
+            {/* <img className={styles.imgSwiper} src={image} /> */}
+            <div className={styles.swiperData}>
+              <h3>Información</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dolorem. Iure ipsa eius, itaque laboriosam quam unde nisi harum molestias in vero alias animi expedita maiores consequatur vel veniam reprehenderit!</p>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
