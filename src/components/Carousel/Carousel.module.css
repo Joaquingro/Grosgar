@@ -1,0 +1,26 @@
+.mySwipper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+   
+   
+  }
+
+  .imgSwiper {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
+
+@media (max-width: 440px) {
+    .mySwipper{
+        padding: 0px;
+    }
+}

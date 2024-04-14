@@ -1,7 +1,6 @@
-import React from 'react'
 import style from "../Info/Info.module.css";
-import Aos from "../../assets/Aos.jsx"
 
+// eslint-disable-next-line react/prop-types
 export default function Info({isDarkMode}) {
 
 
@@ -14,7 +13,7 @@ export default function Info({isDarkMode}) {
             data-aos="flip-up" 
             data-aos-duration="1000">
               <p>Cumplimiento Legal y Fiscal</p>
-              <i class="bi bi-check-circle-fill"></i>
+              <i className="bi bi-check-circle-fill"></i>
             </div>
 
             <div className={isDarkMode? style.dark3 : style.benefitContent}
@@ -22,7 +21,7 @@ export default function Info({isDarkMode}) {
             data-aos-duration="1000"
             >
               <p>Control de Gastos</p>
-              <i class="bi bi-wallet2"></i>
+              <i className="bi bi-wallet2"></i>
             </div>
         </div>  
 
@@ -31,14 +30,14 @@ export default function Info({isDarkMode}) {
             data-aos="flip-up" 
             data-aos-duration="1000">
              <p>Crecimiento Sostenible</p> 
-             <i class="bi bi-graph-up-arrow"></i>
+             <i className="bi bi-graph-up-arrow"></i>
             </div>
 
             <div className={isDarkMode ? style.dark3 : style.benefitContent}
             data-aos="flip-up" 
             data-aos-duration="1000">
               <p>Planificación de Impuestos</p> 
-              <i class="bi bi-list-check"></i>
+              <i className="bi bi-list-check"></i>
               </div>
         </div>         
        </div>    
@@ -52,7 +51,7 @@ export default function Info({isDarkMode}) {
           <h4>BENEFICIOS</h4>
             <h1>¿Qué beneficios nos aporta?</h1>
             <p> Proporciona una imagen clara y detallada de todas las transacciones monetarias y actividades económicas que ocurren en el negocio. Aquí están las razones fundamentales por las que la contabilidad es crucial.</p>
-            <button type="button" class={isDarkMode? `btn btn-secondary ${style.dark6}` :`btn btn-secondary ${style.button}`}>Conoce más</button>
+            <button type="button" className={isDarkMode? `btn btn-secondary ${style.dark6}` :`btn btn-secondary ${style.button}`}>Conoce más</button>
         </div>
 
 
