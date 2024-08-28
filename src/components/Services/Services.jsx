@@ -1,6 +1,4 @@
-import React from 'react'
 import style from "../Services/Services.module.css";
-import Aos from '../../assets/Aos';
 
 
 export default function Services({isDarkMode}) {
@@ -17,7 +15,7 @@ export default function Services({isDarkMode}) {
 
               <h5>Contabilidad General</h5>
               <section className={isDarkMode? style.dark2 : style.serviceContent}>
-                <i class="bi bi-calculator"></i>
+                <i className="bi bi-calculator"></i>
                 <p> Llevar registros contables precisos, mantener el libro mayor, registrar transacciones financieras y preparar estados financieros.</p>  
               </section> 
             </div>
@@ -28,7 +26,7 @@ export default function Services({isDarkMode}) {
 
               <h5>Asesoramiento Fiscal</h5>
               <section className={isDarkMode? style.dark2 : style.serviceContent}>
-                <i class="bi bi-journal-text"></i> 
+                <i className="bi bi-journal-text"></i> 
                 <p>Asesoramiento sobre estrategias fiscales para minimizar la carga tributaria legalmente, identificar deducciones y beneficios fiscales.</p> 
               </section> 
             </div>
@@ -39,7 +37,7 @@ export default function Services({isDarkMode}) {
 
               <h5>Planificación Financiera</h5>
               <section className={isDarkMode? style.dark2 : style.serviceContent}>
-                <i class="bi bi-lightbulb-fill"></i>
+                <i className="bi bi-lightbulb-fill"></i>
                 <p>Ayudar a los clientes a establecer objetivos financieros, crear presupuestos y desarrollar estrategias para alcanzar metas financieras.</p>
               </section> 
             </div>
@@ -50,7 +48,7 @@ export default function Services({isDarkMode}) {
 
               <h5>Consultoría Financiera</h5>
               <section className={isDarkMode? style.dark2 : style.serviceContent}>
-                <i class="bi bi-building-fill-gear"></i>  
+                <i className="bi bi-building-fill-gear"></i>  
                 <p>Brindar asesoramiento en temas financieros, como inversión, financiamiento, fusiones y adquisiciones.</p>
               </section> 
              </div> 
@@ -61,7 +59,7 @@ export default function Services({isDarkMode}) {
 
               <h5>Registro de Empresas</h5>
               <section className={isDarkMode? style.dark2 : style.serviceContent}>
-                <i class="bi bi-buildings"></i> 
+                <i className="bi bi-buildings"></i> 
                 <p>Asistir en la creación y registro de empresas, así como en la obtención de permisos y licencias necesarios.</p>
               </section> 
 
@@ -73,7 +71,7 @@ export default function Services({isDarkMode}) {
 
                 <h5>Revisión de Contratos</h5>
                 <section className={isDarkMode? style.dark2 : style.serviceContent}>
-                  <i class="bi bi-file-text-fill"></i>
+                  <i className="bi bi-file-text-fill"></i>
                   <p>Evaluar contratos y acuerdos financieros para garantizar que cumplan con los requisitos legales y sean beneficiosos para la empresa.</p>
                 </section>
 

@@ -12,7 +12,7 @@ function Home({isDarkMode}) {
   return (
     <div className={isDarkMode ? style.dark : style.white}>
       <ImageContent  isDarkMode = {isDarkMode} />
-      <Carousel/>
+      {/* <Carousel/> */}
       <Info isDarkMode = {isDarkMode}/>
       <Process isDarkMode = {isDarkMode} />
       <Services isDarkMode = {isDarkMode}/>
