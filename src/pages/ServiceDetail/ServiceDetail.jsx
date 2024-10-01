@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import style from "../ServiceDetail/ServiceDetail.module.css";
 import serviceInfo from "./Service";
-import Footer from "../../components/Footer/Footer";
 import contract from "../../assets/contratar.png";
 export default function ServiceDetail({ isDarkMode }) {
   return (
@@ -98,7 +98,6 @@ export default function ServiceDetail({ isDarkMode }) {
             ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

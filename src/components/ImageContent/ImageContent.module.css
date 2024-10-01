@@ -1,55 +1,8 @@
-.fatherContainer{
+.fatherContainer {
   margin-top: 5em;
 }
 
-.container{
-    background-image: url("../../assets/Inicio.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    height: 40em;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-}
-
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 15.8em;
-    justify-content: space-between;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 87.4em;
-    justify-content: center;
-    height: auto;
-}
-
-.infoSon{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 15em;
-    margin-left: 5em;
-    
-}
-
-.infoSon p{
-    width: 43em;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
-
-
-/**
- * ----------------------------------------
- * DARK MODE
- * ----------------------------------------
- */
- .dark{
+.container {
   background-image: url("../../assets/Inicio.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -59,12 +12,11 @@
   display: flex;
 }
 
-.dark1{
+.info {
   display: flex;
   flex-direction: column;
   align-items: start;
   margin-left: 15.8em;
-  justify-content: space-between;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   width: 87.4em;
@@ -72,355 +24,356 @@
   height: auto;
 }
 
-.dark2{
+.infoSon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 15em;
   margin-left: 5em;
-  
 }
 
-.dark2 p{
+.infoSon p {
   width: 43em;
   font-size: 18px;
   padding: 10px;
   border-radius: 10px;
 }
 
+/**
+ * ----------------------------------------
+ * DARK MODE
+ * ----------------------------------------
+ */
+.dark {
+  background-image: url("../../assets/Inicio.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  height: 40em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+}
 
+.dark1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 15.8em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 87.4em;
+  justify-content: center;
+  height: auto;
+}
 
+.dark2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15em;
+  margin-left: 5em;
+}
 
-
-
-
+.dark2 p {
+  width: 43em;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 /**
  * ----------------------------------------
  * animation focus-in-expand-fwd
  * ----------------------------------------
  */
- @-webkit-keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
   }
-  @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
+  40% {
+    opacity: 0.6;
   }
-  
-  
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /**
  * ----------------------------------------
  * RESPONSIVE
  * ----------------------------------------
  */
 
-  
-  @media (max-width: 448px) {
-    .fatherContainer {
-      margin-top: 3.5em;
-      padding: 10px;
-      position: relative; /* Añade esta línea */
-    }
-    
-    .container {
-      background-image: url(../../assets/responsive_back.jpg);
-      background-attachment: initial;
-      background-size: cover ;
-      height: 61em;
-      margin-bottom: -1em;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      border-radius: 10px; 
-      height: 45em;     
-    }
-    
-    .info {
-      width: 100%;
-      height: 100%;
-      background-color: transparent;
-      bottom: 0; /* Añade esta línea */
-      color: white;
-      margin-left: 0;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-radius: 10px; 
-      text-align: center;
-      
+@media (max-width: 448px) {
+  .fatherContainer {
+    margin-top: 3.5em;
+    padding: 10px;
+    position: relative; /* Añade esta línea */
+  }
 
-    }
-    
-    .infoSon {
-      margin-left: 0;
-      width: 100%;
-      padding: 4px;
-      height: 100%;
-      display: flex;
-      justify-content: space-evenly;
-    }
-    
-    .infoSon h1{
-      font-size: 1.2em;
-    }
-
-    .infoSon h4{
-      font-size: 1.4;
-    }
-
-    
-    
-    .infoSon p {
-      width: 100%;
-      text-align: justify;
-      align-self: center;
-      background-color: rgb(255, 255, 255, 0.8);
-      color: black;
-      font-size: 1em;
-      
-    }
-    
-  
-  /**
-  * ----------------------------------------
-  * DARK MODE
-  * ----------------------------------------
-  */
-
-  .dark{
+  .container {
     background-image: url(../../assets/responsive_back.jpg);
     background-attachment: initial;
-    background-size: cover ;
-    height: 61em;
+    background-size: cover;
     margin-bottom: -1em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 10px; 
-    height: 45em;     
+    border-radius: 10px;
+    height: 45em;
   }
 
-  .dark1{
+  .info {
     width: 100%;
-      height: 100%;
-      background-color: transparent;
-      bottom: 0; /* Añade esta línea */
-      color: white;
-      margin-left: 0;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-radius: 10px; 
-      text-align: center;
+    height: 100%;
+    bottom: 0; /* Añade esta línea */
+    color: white;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: center;
   }
 
-  .dark2{
+  .infoSon {
     margin-left: 0;
     width: 100%;
     padding: 4px;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
-
   }
 
-  .dark2 h1{
+  .infoSon h1 {
     font-size: 1.2em;
   }
 
-  .dark2 h4{
+  .infoSon h4 {
     font-size: 1.4;
   }
 
-  .dark2 p{
+  .infoSon p {
     width: 100%;
-      text-align: justify;
-      align-self: center;
-      background-color: rgb(255, 255, 255, 0.8);
-      color: black;
-      font-size: 1em;
-
+    text-align: justify;
+    align-self: center;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: black;
+    font-size: 1em;
   }
 
-  
-    
+  /**
+  * ----------------------------------------
+  * DARK MODE
+  * ----------------------------------------
+  */
+
+  .dark {
+    background-image: url(../../assets/responsive_back.jpg);
+    background-attachment: initial;
+    background-size: cover;
+    margin-bottom: -1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 45em;
   }
 
-  @media (min-width: 448px) and (max-width: 768px) {
-    /* Estilos para pantallas con ancho máximo de 768px */
-    .container{
-      background-image: url(../../assets/responsive.jpg);
-      background-attachment: local;
-      height: 70em;
-      margin-bottom: -20em;
-    }
-
-    .info{
-      width: 100%;
-      margin-left: 0;
-      height: 22.5em;
-      background-color: none;
-      text-align: center;
-      background-color: white;
-      color: black;
-
-      
-    }
-
-    .infoSon{
-      margin-left: 0;
-      width: 100%;
-      padding: 4px;
-      margin-top: -2em;
-
-    }
-
-    .infoSon p{
-      width: auto;
-      text-align: justify;
-      align-self: center;
-      padding: 30px;
-    }
-  
-    /**  * ----------------------------------------
-    * DARK MODE
-    * ----------------------------------------
-    */
-  
-    .dark{
-      background-image: url(../../assets/responsive.jpg);
-      background-attachment: local;
-      height: 70em;
-      margin-bottom: -20em;
-    }
-
-    .dark1{
-      width: 100%;
-      margin-left: 0;
-      height: 22.5em;
-      background-color: none;
-      text-align: center;
-      background-color: rgb(39, 39, 39);
-
-      color: white;
-
-      
-    }
-
-    .dark2{
-      margin-left: 0;
-      width: 100%;
-      padding: 4px;
-      margin-top: -2em;
-
-    }
-
-    .dark2 p{
-      width: auto;
-      text-align: justify;
-      align-self: center;
-      padding: 30px;
-    }
-
-    
+  .dark1 {
+    width: 100%;
+    height: 100%;
+    bottom: 0; /* Añade esta línea */
+    color: white;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: center;
   }
 
-  @media (min-width: 769px) and (max-width: 992px) {
-    /* Estilos para pantallas con ancho entre 768px y 992px */
+  .dark2 {
+    margin-left: 0;
+    width: 100%;
+    padding: 4px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-    .container{
-      background-attachment: local;
-      background-size: cover;
-    
-    }
+  .dark2 h1 {
+    font-size: 1.2em;
+  }
 
-    .info{
-      width: 100%;
-      height: auto;
-      background-color: none;
-      text-align: justify;
-      margin-left: 0;
-      margin-right: 0;
-      align-items: center;    
-        
-    }
+  .dark2 h4 {
+    font-size: 1.4;
+  }
 
-    .infoSon p{
-      width: 30em;
-    }
+  .dark2 p {
+    width: 100%;
+    text-align: justify;
+    align-self: center;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: black;
+    font-size: 1em;
+  }
+}
 
-    /**
-    * ----------------------------------------
+@media (min-width: 448px) and (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px */
+  .container {
+    background-image: url(../../assets/responsive.jpg);
+    background-attachment: local;
+    height: 70em;
+    margin-bottom: -20em;
+  }
+
+  .info {
+    width: 100%;
+    margin-left: 0;
+    height: 22.5em;
+    text-align: center;
+    background-color: white;
+    color: black;
+  }
+
+  .infoSon {
+    margin-left: 0;
+    width: 100%;
+    padding: 4px;
+    margin-top: -2em;
+  }
+
+  .infoSon p {
+    width: auto;
+    text-align: justify;
+    align-self: center;
+    padding: 30px;
+  }
+
+  /**  * ----------------------------------------
     * DARK MODE
     * ----------------------------------------
     */
 
-    .dark{
-      background-attachment: local;
-      background-size: cover;
-    
-    }
-
-    .dark1{
-      width: 100%;
-      height: auto;
-      background-color: none;
-      text-align: justify;
-      margin-left: 0;
-      margin-right: 0;
-      align-items: center;    
-        
-    }
-
-    .dark2 p{
-      width: 30em;
-    }
+  .dark {
+    background-image: url(../../assets/responsive.jpg);
+    background-attachment: local;
+    height: 70em;
+    margin-bottom: -20em;
   }
 
-  @media (min-width: 992px) and (max-width: 1920px){
-    /* Estilos para pantallas con ancho mínimo de 992px */
+  .dark1 {
+    width: 100%;
+    margin-left: 0;
+    height: 22.5em;
+    text-align: center;
+    background-color: rgb(39, 39, 39);
 
-    .container{
-      background-attachment: local;
-      background-size: cover;
-    }
+    color: white;
+  }
 
-    .info{
-      margin-left: 0;
-      width: 100%;
-      margin-right: 0;
-      
-    }
+  .dark2 {
+    margin-left: 0;
+    width: 100%;
+    padding: 4px;
+    margin-top: -2em;
+  }
 
-     /**
+  .dark2 p {
+    width: auto;
+    text-align: justify;
+    align-self: center;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Estilos para pantallas con ancho entre 768px y 992px */
+
+  .container {
+    background-attachment: local;
+    background-size: cover;
+  }
+
+  .info {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .infoSon p {
+    width: 30em;
+  }
+
+  /**
     * ----------------------------------------
     * DARK MODE
     * ----------------------------------------
     */
 
-    .dark{
-      background-attachment: local;
-      background-size: cover;
-    }
-
-    .dark1{
-      margin-left: 0;
-      width: 100%;
-      margin-right: 0;
-      
-    }
+  .dark {
+    background-attachment: local;
+    background-size: cover;
   }
+
+  .dark1 {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .dark2 p {
+    width: 30em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1920px) {
+  /* Estilos para pantallas con ancho mínimo de 992px */
+
+  .container {
+    background-attachment: local;
+    background-size: cover;
+  }
+
+  .info {
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /**
+    * ----------------------------------------
+    * DARK MODE
+    * ----------------------------------------
+    */
+
+  .dark {
+    background-attachment: local;
+    background-size: cover;
+  }
+
+  .dark1 {
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+}

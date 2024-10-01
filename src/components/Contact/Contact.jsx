@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import style from "../Contact/Contact.module.css";
 
@@ -65,7 +66,7 @@ export default function Contact({ isDarkMode, id }) {
             <form
               action="https://formspree.io/f/mleqrpva"
               method="POST"
-              novalidate
+              noValidate
             >
               <div className={style.containerNames}>
                 <div className={isDarkMode ? style.dark8 : style.formContainer}>

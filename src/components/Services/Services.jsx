@@ -1,6 +1,7 @@
 import style from "../Services/Services.module.css";
 
 
+// eslint-disable-next-line react/prop-types
 export default function Services({isDarkMode}) {
   return (
     <section className={isDarkMode? style.dark : style.container}>

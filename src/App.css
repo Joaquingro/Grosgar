@@ -1,4 +1,9 @@
 html,
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: rgb(81, 87, 95);
 }
