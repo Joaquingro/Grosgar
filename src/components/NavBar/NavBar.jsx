@@ -15,11 +15,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import logo from "../../assets/logo.png";
-import style from "../NavBar/NavBar.module.css";
 import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ["Inicio", "Servicios", "Nosotros"];
+const navItems = ["Inicio", "Nosotros"];
 
 function DrawerAppBar(props) {
   const { window, isDarkMode, handleDarkMode, id } = props;
@@ -136,7 +135,7 @@ function DrawerAppBar(props) {
               </Button>
             ))}
           </Box>
-          <button
+          {/* <button
             type="button"
             className={`btn btn-dark ${style.darkMode}`}
             onClick={handleDarkMode}
@@ -146,7 +145,7 @@ function DrawerAppBar(props) {
             ) : (
               <i className="bi bi-moon-stars-fill"></i>
             )}
-          </button>
+          </button> */}
         </Toolbar>
       </AppBar>
       <nav>

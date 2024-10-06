@@ -24,7 +24,7 @@ const images = [
     "https://swiperjs.com/demos/images/nature-8.jpg",
   ];
 
-export default function App() {
+export default function Carousel() {
   return (
     <>
       <Swiper

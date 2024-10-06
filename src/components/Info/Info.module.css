@@ -1,12 +1,12 @@
 .container {
   display: flex;
   flex-direction: row;
-  height: 35em;
+  height: auto;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4em;
-  margin-top: 4em;
   width: 100%;
+  margin-bottom: 150px;
+  padding: 50px 0px;
 }
 
 .containerSon {
