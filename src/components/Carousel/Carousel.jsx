@@ -40,6 +40,7 @@ export default function Carousel() {
           slideShadows: true,
         }}
         loop={true}
+        speed={2000} 
         autoplay={{
             delay: 2500,
             disableOnInteraction: false
