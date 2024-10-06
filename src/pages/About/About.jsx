@@ -14,8 +14,18 @@ export default function About() {
 
       <div className={style.mision}>
         <span className={style.containerImgs}>
-          <img src={mision} alt="mision imagen" className={style.misionImg} />
-          <img src={vision} alt="vision imagen" className={style.visionImg} />
+          <img
+            src={mision}
+            alt="mision imagen"
+            className={style.misionImg}
+            loading="lazy"
+          />
+          <img
+            src={vision}
+            alt="vision imagen"
+            className={style.visionImg}
+            loading="lazy"
+          />
         </span>
         <div className={style.aboutContent}>
           <h4 className={style.title}>Misión</h4>
@@ -83,7 +93,12 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <img src={valores} alt="valores imagen" className={style.valoresImg} />
+        <img
+          src={valores}
+          alt="valores imagen"
+          className={style.valoresImg}
+          loading="lazy"
+        />
       </div>
     </div>
   );
