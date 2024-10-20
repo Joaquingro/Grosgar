@@ -8,7 +8,7 @@ export default function About() {
     <div className={style.containerAbout}>
       <div className={style.header}>
         <h1>Acerca de nosotros </h1>
-        <h5>Conoce más de Grosgar</h5>
+        <h5>Conoce más de CAIM</h5>
         <p className={style.color}>CONSULTORIA Y GESTIÓN EMPRESARIAL</p>
       </div>
 

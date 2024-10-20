@@ -13,10 +13,9 @@
 }
 
 .title img {
-  width: 5em;
+  width: 250px;
+  height: auto;
   margin-top: -10px;
-  clip-path: circle(40%);
-  background-color: white;
 }
 
 .title h1 {

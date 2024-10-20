@@ -8,7 +8,6 @@ function Footer({ isDarkMode }) {
         <div className={isDarkMode ? style.dark2 : style.titleContainer}>
           <div className={isDarkMode ? style.dark3 : style.title}>
             <img src={logo} alt="logo" />
-            <h1>GrosGar</h1>
           </div>
 
           <div className={isDarkMode ? style.dark4 : style.social}>

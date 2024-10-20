@@ -45,12 +45,9 @@ function DrawerAppBar(props) {
             alt="Logo"
             style={{
               marginRight: "8px",
-              width: "50px",
-              clipPath: "circle(40%)",
-              backgroundColor: "white",
+              width: "250px",
             }}
           />
-          <span style={{ color: isDarkMode ? "white" : "black" }}>Grosgar</span>
         </div>
       </Typography>
 
@@ -82,7 +79,7 @@ function DrawerAppBar(props) {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: isDarkMode ? "#333" : "#fff", // Cambia el color de fondo según el modo oscuro
+          backgroundColor: isDarkMode ? "#333" : "#333", // Cambia el color de fondo según el modo oscuro
         }}
       >
         <Toolbar>
@@ -91,7 +88,7 @@ function DrawerAppBar(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" }, color: "black" }}
+            sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
           >
             <MenuIcon />
           </IconButton>
@@ -104,6 +101,7 @@ function DrawerAppBar(props) {
               display: { xs: "none", sm: "block", color: "black" },
               fontSize: "35px",
               padding: "10px",
+              backgroundColor: "#333"
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
@@ -112,14 +110,9 @@ function DrawerAppBar(props) {
                 alt="Logo"
                 style={{
                   marginRight: "8px",
-                  width: "76px",
-                  backgroundColor: "white",
-                  clipPath: "circle(40%)",
+                  width: "250px",
                 }}
               />
-              <span style={{ color: isDarkMode ? "white" : "black" }}>
-                Grosgar
-              </span>
             </div>
           </Typography>
 
@@ -162,8 +155,8 @@ function DrawerAppBar(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              backgroundColor: isDarkMode ? "#333" : "#fff",
-              color: isDarkMode ? "white" : "black",
+              backgroundColor: isDarkMode ? "#333" : "#333",
+              color: isDarkMode ? "white" : "white",
             },
           }}
         >
