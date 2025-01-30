@@ -54,12 +54,12 @@ export default function Whatsapp() {
   return (
     <div className={style.container}>
       <ToastContainer position="bottom-right"/>
-      <a href="https://wa.me/5532943994">
-      <button type="button" className={`btn btn-success     btn-lg ${style.button}`}>
-        <i className="bi bi-chat-dots-fill"></i>
+      <a href="https://wa.me/5532943994" target="_blank" rel="noopener noreferrer">
+        <button type="button" className={`btn btn-success btn-lg ${style.button}`}>
+          <i className="bi bi-chat-dots-fill"></i>
         </button>
       </a>
-      
+
       {isVisible && (
         <AnchorLink href="#inicio">
           <a className={`nav-link active ${isVisible ? style.visible : style.hidden}`} aria-current="page">

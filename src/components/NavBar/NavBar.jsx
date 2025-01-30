@@ -15,14 +15,17 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["Inicio", "Nosotros"];
 
 function DrawerAppBar(props) {
-  const { window, isDarkMode, handleDarkMode, id } = props;
+  const { window, id } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+console.log(location.pathname);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -79,17 +82,21 @@ function DrawerAppBar(props) {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: isDarkMode ? "#333" : "#333", // Cambia el color de fondo según el modo oscuro
+          backgroundColor: "var(--primary-color)",
         }}
       >
-        <Toolbar>
+        {/* <div className="bg-white w-full m-auto">
+          <p className="text-xs text-black mb-0">Llámanos</p>
+        </div> */}
+
+        <Toolbar className="max-w-[1350px] w-full m-auto">
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
-          >
+            >
             <MenuIcon />
           </IconButton>
 
@@ -101,44 +108,45 @@ function DrawerAppBar(props) {
               display: { xs: "none", sm: "block", color: "black" },
               fontSize: "35px",
               padding: "10px",
-              backgroundColor: "#333"
+              backgroundColor: "var(--primary-color)",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <img
-                src={logo}
-                alt="Logo"
-                style={{
-                  marginRight: "8px",
-                  width: "250px",
-                }}
-              />
+            <div>
+              <img src={logo} alt="Logo" className="w-[250px]" />
             </div>
           </Typography>
 
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", sm: "flex" }, gap: '5px' }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "black" }}>
-                <Link to={`/${item.toLowerCase()}`} className="nav-link active">
-                  {/* Ajusta el contenido del botón según tu necesidad */}
-                  <button type="button" className="btn btn-light">
-                    {item}
-                  </button>
-                </Link>
+              <Button
+              variant="text"
+              key={item}
+              onClick={() => navigate(item.toLowerCase())}
+              sx={{
+                color: "white",
+                position: "relative",
+                borderRadius: "0px",
+                "&::after": {
+                  content: '""',
+                  position: "absolute",
+                  width: "100%",
+                  height: "2px",
+                  backgroundColor: "white",
+                  bottom: -2,
+                  left: 0,
+                  transform: "scaleX(0)",
+                  transition: "transform 0.3s ease-in-out",
+                },
+                borderBottom: location.pathname === `/${item.toLowerCase()}` ? "2px solid white" : "2px solid transparent",
+                "&:hover::after": {
+                  transform: "scaleX(1)",
+                },
+              }}
+              >
+                {item}
               </Button>
             ))}
           </Box>
-          {/* <button
-            type="button"
-            className={`btn btn-dark ${style.darkMode}`}
-            onClick={handleDarkMode}
-          >
-            {isDarkMode ? (
-              <i className="bi bi-brightness-high-fill"></i>
-            ) : (
-              <i className="bi bi-moon-stars-fill"></i>
-            )}
-          </button> */}
         </Toolbar>
       </AppBar>
       <nav>
@@ -155,8 +163,6 @@ function DrawerAppBar(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              backgroundColor: isDarkMode ? "#333" : "#333",
-              color: isDarkMode ? "white" : "white",
             },
           }}
         >
@@ -173,6 +179,7 @@ DrawerAppBar.propTypes = {
    * You won't need it on your project.
    */
   window: PropTypes.func,
+  id: PropTypes.string,
 };
 
 export default DrawerAppBar;
