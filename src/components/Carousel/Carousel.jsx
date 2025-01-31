@@ -126,7 +126,7 @@ export default function Carousel() {
                 href={`https://wa.me/5532943994?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4"
+                className="mt-4 border-none no-underline"
               >
                 <button className="bg-green-500 text-white px-4 py-2 flex gap-2 rounded-md hover:bg-green-600 transition-all">
                   <i className="bi bi-chat-dots-fill "></i>Contratar
