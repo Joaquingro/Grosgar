@@ -1,11 +1,11 @@
 import style from "../ImageContent/ImageContent.module.css";
 
-export default function ImageContent({ isDarkMode }) {
+export default function ImageContent() {
   return (
     <div className={style.fatherContainer}>
-      <div className={isDarkMode ? style.dark : style.container}>
-        <div className={isDarkMode ? style.dark1 : style.info}>
-          <div className={isDarkMode ? style.dark2 : style.infoSon}>
+      <div className={style.container}>
+        <div className={style.info}>
+          <div className={style.infoSon}>
             <h4>TRANSFORMANDO NÚMEROS EN OPORTUNIDADES</h4>
             <h1>ASESORÍA CONTABLE A SU SERVICIO</h1>
             <p>

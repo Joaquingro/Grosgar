@@ -32,7 +32,16 @@ console.log(location.pathname);
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle}
+      sx={{
+        textAlign: "center",
+        color: "white",
+        backgroundColor: "var(--secondary-color)", 
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <Typography
         variant="h6"
         sx={{
