@@ -7,10 +7,9 @@ export default function Info({ isDarkMode }) {
       <div className={isDarkMode ? style.dark1 : style.containerSon}>
         <div className={isDarkMode ? style.dark2 : style.benefit}>
           <div className={isDarkMode ? style.dark3 : style.benefitContent}>
-            <p>Cumplimiento Legal y Fiscal</p>
+            <p className="text-right">Cumplimiento Legal y Fiscal</p>
             <i className="bi bi-check-circle-fill"></i>
           </div>
-
           <div
             className={isDarkMode ? style.dark3 : style.benefitContent}
           

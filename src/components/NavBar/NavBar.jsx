@@ -25,18 +25,19 @@ function DrawerAppBar(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-console.log(location.pathname);
+  console.log(location.pathname);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle}
+    <Box
+      onClick={handleDrawerToggle}
       sx={{
         textAlign: "center",
         color: "white",
-        backgroundColor: "var(--secondary-color)", 
+        backgroundColor: "var(--secondary-color)",
         height: "100%",
         display: "flex",
         flexDirection: "column",
@@ -105,7 +106,7 @@ console.log(location.pathname);
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
-            >
+          >
             <MenuIcon />
           </IconButton>
 
@@ -125,32 +126,35 @@ console.log(location.pathname);
             </div>
           </Typography>
 
-          <Box sx={{ display: { xs: "none", sm: "flex" }, gap: '5px' }}>
+          <Box sx={{ display: { xs: "none", sm: "flex" }, gap: "5px" }}>
             {navItems.map((item) => (
               <Button
-              variant="text"
-              key={item}
-              onClick={() => navigate(item.toLowerCase())}
-              sx={{
-                color: "white",
-                position: "relative",
-                borderRadius: "0px",
-                "&::after": {
-                  content: '""',
-                  position: "absolute",
-                  width: "100%",
-                  height: "2px",
-                  backgroundColor: "white",
-                  bottom: -2,
-                  left: 0,
-                  transform: "scaleX(0)",
-                  transition: "transform 0.3s ease-in-out",
-                },
-                borderBottom: location.pathname === `/${item.toLowerCase()}` ? "2px solid white" : "2px solid transparent",
-                "&:hover::after": {
-                  transform: "scaleX(1)",
-                },
-              }}
+                variant="text"
+                key={item}
+                onClick={() => navigate(item.toLowerCase())}
+                sx={{
+                  color: "white",
+                  position: "relative",
+                  borderRadius: "0px",
+                  "&::after": {
+                    content: '""',
+                    position: "absolute",
+                    width: "100%",
+                    height: "2px",
+                    backgroundColor: "white",
+                    bottom: -2,
+                    left: 0,
+                    transform: "scaleX(0)",
+                    transition: "transform 0.3s ease-in-out",
+                  },
+                  borderBottom:
+                    location.pathname === `/${item.toLowerCase()}`
+                      ? "2px solid white"
+                      : "2px solid transparent",
+                  "&:hover::after": {
+                    transform: "scaleX(1)",
+                  },
+                }}
               >
                 {item}
               </Button>

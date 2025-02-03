@@ -1,9 +1,8 @@
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
   -webkit-text-size-adjust: 100%;
   --primary-color: #333;
   --secondary-color: rgb(81, 87, 95);
@@ -13,7 +12,7 @@
 }
 
 button {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color );
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;

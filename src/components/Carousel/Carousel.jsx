@@ -18,6 +18,7 @@ import pymes from "../../assets/pymes.jpg";
 import freelance from "../../assets/freelance.jpg";
 import micro from "../../assets/micro.jpg";
 import gigEconomy from "../../assets/digital.jpg";
+import { LuMessageCircleMore } from "react-icons/lu";
 
 const accountingTypes = [
   {
@@ -111,9 +112,9 @@ export default function Carousel() {
           >
             <div
               style={{
-                backgroundColor: "rgba(0, 0, 0, 0.4)",
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
                 color: "white",
-                height: "350px",
+                height: "92%",
                 textAlign: "center",
               }}
               className="flex flex-col justify-center p-4 rounded-[10px] items-center"
@@ -128,8 +129,9 @@ export default function Carousel() {
                 rel="noopener noreferrer"
                 className="mt-4 border-none no-underline"
               >
-                <button className="bg-green-500 text-white px-4 py-2 flex gap-2 rounded-md hover:bg-green-600 transition-all">
-                  <i className="bi bi-chat-dots-fill "></i>Contratar
+                <button className="flex items-center">
+                  <LuMessageCircleMore className="mr-2"/>
+                  Contratar
                 </button>
               </a>
             </div>
