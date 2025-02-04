@@ -22,3 +22,19 @@ button {
 button:hover {
   background-color: var(--hover-color);
 }
+
+
+/* Cambia el tamaño del texto dentro del input */
+.MuiInputBase-input {
+  font-size: 14px !important;
+}
+
+/* Cambia el tamaño del label (placeholder flotante) */
+.MuiInputLabel-root {
+  font-size: 14px !important;
+}
+
+/* Aplica border-radius global a los TextField */
+.MuiOutlinedInput-root {
+  border-radius: 25px !important;
+}
