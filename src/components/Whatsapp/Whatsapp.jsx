@@ -36,7 +36,7 @@ export default function Whatsapp() {
   return (
     <div className={style.container}>
       <a href="https://wa.me/5532943994" target="_blank" rel="noopener noreferrer">
-        <button type="button" className={`bg-green-400 hover:bg-green-600 p-3 rounded-lg ${style.button}`}>
+        <button type="button" className={`bg-green-400 hover:bg-green-600 p-2 sm:p-3 rounded-lg  ${style.button}`}>
           <FaWhatsapp size={35}/>
         </button>
       </a>
@@ -44,7 +44,7 @@ export default function Whatsapp() {
       {isVisible && (
         <AnchorLink href="#inicio">
           <a className={`nav-link active ${isVisible ? style.visible : style.hidden}`} aria-current="page">
-          <button type="button" className={`bg-green-400 hover:bg-green-600 p-3 rounded-lg  ${style.upArrow}`} onClick={handleScrollToTop}>
+          <button type="button" className={`bg-green-400 hover:bg-green-600 p-2 sm:p-3 rounded-lg  ${style.upArrow}`} onClick={handleScrollToTop}>
           <FaArrowCircleUp size={35}/>
           </button>
         </a>
