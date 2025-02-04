@@ -117,11 +117,12 @@ export default function Carousel() {
                 height: "92%",
                 textAlign: "center",
               }}
-              className="flex flex-col justify-center p-4 rounded-[10px] items-center"
+              className="flex flex-col justify-center p-4 rounded-[10px] items-center w-full"
             >
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-
+              <div className="max-w-[300px] w-full">
+                <h3 className="text-xl">{item.title}</h3>
+                <p className="text-sm mt-5 mb-5 font-light">{item.description}</p>
+              </div>
               {/* Botón con enlace a WhatsApp */}
               <a
                 href={`https://wa.me/5532943994?text=${whatsappMessage}`}
@@ -130,7 +131,7 @@ export default function Carousel() {
                 className="mt-4 border-none no-underline"
               >
                 <button className="flex items-center">
-                  <LuMessageCircleMore className="mr-2"/>
+                  <LuMessageCircleMore className="mr-2" />
                   Contratar
                 </button>
               </a>

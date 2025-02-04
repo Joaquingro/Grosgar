@@ -7,14 +7,14 @@
   .button {
     position: fixed; 
     z-index: 9999;
-    right: 5%;
+    right: 15px;
     bottom: 5%;
   }
   
   .upArrow{
     position: fixed; 
     z-index: 9999;
-    right: 10%;
+    right: 85px;
     bottom: 5%;
   }
 
@@ -51,101 +51,3 @@
     transition: opacity 0.5s ease-in-out;
     pointer-events: none;
   }
-/*
- * ----------------------------------------
- * RESPONSIVE
- * ----------------------------------------
- */
-
-@media (max-width: 391px) {
-   
-    .button{
-        height: 2.9em;
-        width: 2.9em;
-        bottom: 2%;
-        right: 4%;
-    }
-
-    .button i{
-      text-align: center;
-      font-size: 1em;
-
-    }
-
-    .upArrow{
-      height: 3.6em;
-      width: 3.6em;
-      bottom: 2%;
-      right: 19%;
-    }
-
-    .upArrow i{
-      font-size: 1.5em;
-    }
-
-
-    .custom-toast{
-        height: 15px;
-        left: 60px;
-
-    }
-}
-@media (min-width: 391px) and (max-width: 765px) {
-  /* Estilos para pantallas con ancho máximo de 768px */
-  .button{
-      height: 3.2em;
-      width: 3.2em;
-      bottom: 2%;
-      right: 4%;
-  }
-
-  .upArrow{
-    height: 4em;
-    width: 4em;
-    bottom: 2%;
-    right: 18%;
-  }
-
-  .container i{
-      font-size: 1.6em;
-  }
-
-  .custom-toast{
-      height: 20px;
-      left: 100px;
-
-  }
-}
-
-@media (min-width: 766px) and (max-width: 992px) {
-  /* Estilos para pantallas con ancho entre 768px y 992px */
-  .custom-toast{
-    right: 15%;
-    position: absolute;
-    bottom: 5%;
-  }
-
-  .button{
-    height: 3.2em;
-    width: 3.2em;
-    bottom: 2%;
-    right: 4%;
-}
-  .upArrow{
-    height: 4em;
-    width: 4em;
-    bottom: 2%;
-    right: 12%;
-  }
-
-}
-
-@media (min-width: 992px) and (max-width: 1500px) {
-  /* Estilos para pantallas con ancho mínimo de 992px */
-
-    .custom-toast{
-      right: 15%;
-      position: absolute;
-      bottom: 5%;
-    }
-}
