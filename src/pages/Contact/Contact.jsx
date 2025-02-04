@@ -38,7 +38,10 @@ export default function Contact({ id }) {
   ];
 
   return (
-    <div className="bg-secondary-100 w-full px-4 ms:px-20 ">
+    <div className="relative w-full px-4 ms:px-20 bg-line bg-cover bg-no-repeat sm:bg-center">
+
+
+
       <div className="max-w-[1500px] w-full m-auto py-5 sm:p-20 flex justify-around gap-10 sm:gap-5 flex-wrap">
         <div
           id={id}
@@ -55,12 +58,12 @@ export default function Contact({ id }) {
           <div>
             <div className="flex items-center gap-3">
               <CiPhone />
-              <p>+52 5532943994</p>
+              <p>+52 55 3294 3994 ó +52 55 3261 1698</p>
             </div>
 
             <div className="flex items-center gap-3 mt-5">
               <MdEmail />
-              <p>contabilidadivmg@gmail.com</p>
+              <p>consultoriaempresarialcaim@gmail.com</p>
             </div>
           </div>
 

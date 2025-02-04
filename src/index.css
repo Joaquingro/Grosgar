@@ -38,3 +38,15 @@ button:hover {
 .MuiOutlinedInput-root {
   border-radius: 25px !important;
 }
+
+/* En tu archivo CSS */
+.bg-line {
+  background-image: url('../src/assets/bg-line.jpg');
+}
+
+@media(max-width:768px) {
+  .bg-line{
+    background-image: none;
+    background-color: var(--secondary-color);
+  }
+}
