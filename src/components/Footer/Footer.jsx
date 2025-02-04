@@ -1,58 +1,43 @@
 import style from "../Footer/Footer.module.css";
 import logo from "../../assets/logo.png";
+import { FaFacebook, FaTwitter } from "react-icons/fa";
 
-function Footer({ isDarkMode }) {
+function Footer() {
   return (
-    <div className={isDarkMode ? style.dark : style.container}>
-      <div className={isDarkMode ? style.dark1 : style.sonContainer}>
-        <div className={isDarkMode ? style.dark2 : style.titleContainer}>
-          <div className={isDarkMode ? style.dark3 : style.title}>
-            <img src={logo} alt="logo" />
+    <div className="bg-primary-50 text-white w-full px-4">
+      <div className="max-w-[1350px] w-full m-auto">
+        <div className="flex items-center w-full justify-center border-b border-b-white py-3 flex-wrap sm:justify-between">
+          <div>
+            <img src={logo} alt="logo" className="w-[250px]" />
           </div>
 
-          <div className={isDarkMode ? style.dark4 : style.social}>
-            <p>Siguenos en nuestras redes sociales</p>
+          <div>
+            <p className="text-sm sm:text-base">Síguenos en nuestras redes sociales</p>
 
-            <a
-              className={style.iconRedirect1}
-              href="https://www.facebook.com/profile.php?id=100084660501983"
-            >
-              <i
-                className={
-                  isDarkMode
-                    ? `bi bi-facebook ${style.dark6}`
-                    : `bi bi-facebook ${style.icon}`
-                }
-              ></i>
-            </a>
+            <div className="flex items-center mt-3 gap-2 w-full justify-center sm:justify-normal">
+              <a
+                className={style.iconRedirect1}
+                href="https://www.facebook.com/profile.php?id=100084660501983"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
 
-            <a
-              className={style.iconRedirect}
-              href="https://twitter.com/ContaGrosGar"
-            >
-              <i
-                className={
-                  isDarkMode
-                    ? `bi bi-twitter ${style.dark5}`
-                    : `bi bi-twitter ${style.icons}`
-                }
-              ></i>
-            </a>
-
-            <a className={style.iconRedirect} href="">
-              <i
-                className={
-                  isDarkMode
-                    ? `bi bi-linkedin ${style.dark6}`
-                    : `bi bi-linkedin ${style.icon}`
-                }
-              ></i>
-            </a>
+              <a
+                className={style.iconRedirect}
+                href="https://twitter.com/ContaGrosGar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className={isDarkMode ? style.dark7 : style.miniFooter}>
-          <p>® 2023 GrosGar. Asesoria Contable</p>
+        <div className="py-2 text-center sm:text-left text-sm sm:text-base">
+          <p>® 2025 Consultoria y Gestión Empresarial CAIM</p>
         </div>
       </div>
     </div>
