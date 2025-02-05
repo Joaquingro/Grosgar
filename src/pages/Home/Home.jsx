@@ -1,6 +1,5 @@
 import style from "../Home/Home.module.css";
 import ImageContent from "../../components/ImageContent/ImageContent";
-import Info from "../../components/Info/Info";
 import Contact from "../Contact/Contact";
 import Carousel from "../../components/Carousel/Carousel";
 
@@ -10,7 +9,7 @@ function Home({ isDarkMode }) {
     <div className={isDarkMode ? style.dark : style.white}>
       <ImageContent isDarkMode={isDarkMode} />
       <Carousel />
-      <Info isDarkMode={isDarkMode} />
+      {/* <Info isDarkMode={isDarkMode} /> */}
       {/* <Process isDarkMode={isDarkMode} /> */}
       {/* <Services isDarkMode={isDarkMode} /> */}
       <Contact id="contact" isDarkMode={isDarkMode} />
