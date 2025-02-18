@@ -1,4 +1,3 @@
-import style from "../Footer/Footer.module.css";
 import logo from "../../assets/logo.png";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 
@@ -16,7 +15,6 @@ function Footer() {
 
             <div className="flex items-center mt-3 gap-2 w-full justify-center sm:justify-normal">
               <a
-                className={style.iconRedirect1}
                 href="https://www.facebook.com/profile.php?id=100084660501983"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -25,7 +23,6 @@ function Footer() {
               </a>
 
               <a
-                className={style.iconRedirect}
                 href="https://twitter.com/ContaGrosGar"
                 target="_blank"
                 rel="noopener noreferrer"

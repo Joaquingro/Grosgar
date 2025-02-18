@@ -1,18 +1,14 @@
-import style from "../Home/Home.module.css";
 import ImageContent from "../../components/ImageContent/ImageContent";
 import Contact from "../Contact/Contact";
 import Carousel from "../../components/Carousel/Carousel";
 
 // eslint-disable-next-line react/prop-types
-function Home({ isDarkMode }) {
+function Home() {
   return (
-    <div className={isDarkMode ? style.dark : style.white}>
-      <ImageContent isDarkMode={isDarkMode} />
+    <div>
+      <ImageContent />
       <Carousel />
-      {/* <Info isDarkMode={isDarkMode} /> */}
-      {/* <Process isDarkMode={isDarkMode} /> */}
-      {/* <Services isDarkMode={isDarkMode} /> */}
-      <Contact id="contact" isDarkMode={isDarkMode} />
+      <Contact id="contact" />
     </div>
   );
 }
