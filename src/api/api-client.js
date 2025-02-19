@@ -3,9 +3,9 @@ import { API_ENDPOINTS } from "./endpoints";
 
 export const authApi = {
   login: async (email, password) => {
-    const { data } = await apiClient.post(API_ENDPOINTS.AUTH.LOGIN(), { email, password });
-    localStorage.setItem("token", data.accessToken);
-    return data;
+    const { response } = await apiClient.post(API_ENDPOINTS.AUTH.LOGIN(), { email, password });
+    localStorage.setItem("token", response.data.token);
+    return response;
   },
 
   register: async (registerData) => {

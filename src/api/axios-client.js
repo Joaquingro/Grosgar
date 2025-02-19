@@ -36,11 +36,11 @@ apiClient.interceptors.response.use(
 
       try {
         const { data } = await apiClient.post(API_ENDPOINTS.AUTH.REFRESH());
-        localStorage.setItem("token", data.accessToken);
+        localStorage.setItem("token", data.token);
         apiClient.defaults.headers.common["Authorization"] = `Bearer ${data.accessToken}`;
         return apiClient(originalRequest); // Reintentar la solicitud original
       } catch (refreshError) {
-        window.location.href = "/login";
+        // window.location.href = "/login";
         return Promise.reject(refreshError);
       }
     }

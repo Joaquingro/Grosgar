@@ -4,8 +4,9 @@ import { Root } from '../Root';
 // import RedirectBasedOnRole from './RedirectBasedOnRole';
 import { AuthLayout } from '../layout/AuthLayout';
 import DashboardLayout from '../layout/DashboardLayout';
-import Home from '../pages/Home/Home';
+import Home from '../pages/Dashboard/Home/Home';
 import About from '../pages/About/About';
+import LoginPage from '../pages/Auth/LoginPage';
 
 
 export const router = createBrowserRouter( [
@@ -44,7 +45,7 @@ export const router = createBrowserRouter( [
         children: [
           {
             path: 'login',
-            element: <></>
+            element: <LoginPage/>
           }
         ]
 
