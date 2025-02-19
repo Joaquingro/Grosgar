@@ -16,9 +16,12 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import logo from "../../assets/logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Container, Menu, MenuItem, Tooltip } from "@mui/material";
+import { FaUserCircle } from "react-icons/fa";
 
 const drawerWidth = 240;
 const navItems = ["Inicio", "Nosotros"];
+const settings = ["Cerrar sesión"];
 
 function DrawerAppBar(props) {
   const { window, id } = props;
@@ -29,6 +32,15 @@ function DrawerAppBar(props) {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
   };
 
   const drawer = (
@@ -95,72 +107,106 @@ function DrawerAppBar(props) {
           backgroundColor: "var(--primary-color)",
         }}
       >
-        {/* <div className="bg-white w-full m-auto">
+        <Container maxWidth="xl">
+          {/* <div className="bg-white w-full m-auto">
           <p className="text-xs text-black mb-0">Llámanos</p>
         </div> */}
 
-        <Toolbar className="max-w-[1350px] w-full m-auto">
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
-          >
-            <MenuIcon />
-          </IconButton>
+          <Toolbar className="max-w-[1350px] w-full m-auto">
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
+            >
+              <MenuIcon />
+            </IconButton>
 
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", sm: "block", color: "black" },
-              fontSize: "35px",
-              padding: "10px",
-              backgroundColor: "var(--primary-color)",
-            }}
-          >
-            <div>
-              <img src={logo} alt="Logo" className="w-[250px]" />
-            </div>
-          </Typography>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", sm: "block", color: "black" },
+                fontSize: "35px",
+                padding: "10px",
+                backgroundColor: "var(--primary-color)",
+              }}
+            >
+              <div>
+                <img src={logo} alt="Logo" className="w-[250px]" />
+              </div>
+            </Typography>
 
-          <Box sx={{ display: { xs: "none", sm: "flex" }, gap: "5px" }}>
-            {navItems.map((item) => (
-              <Button
-                variant="text"
-                key={item}
-                onClick={() => navigate(item.toLowerCase())}
-                sx={{
-                  color: "white",
-                  position: "relative",
-                  borderRadius: "0px",
-                  "&::after": {
-                    content: '""',
-                    position: "absolute",
-                    width: "100%",
-                    height: "2px",
-                    backgroundColor: "white",
-                    bottom: -2,
-                    left: 0,
-                    transform: "scaleX(0)",
-                    transition: "transform 0.3s ease-in-out",
-                  },
-                  borderBottom:
-                    location.pathname === `/${item.toLowerCase()}`
-                      ? "2px solid white"
-                      : "2px solid transparent",
-                  "&:hover::after": {
-                    transform: "scaleX(1)",
-                  },
+            <Box sx={{ display: { xs: "none", sm: "flex" }, gap: "5px" }}>
+              {navItems.map((item) => (
+                <Button
+                  variant="text"
+                  key={item}
+                  onClick={() => navigate(item.toLowerCase())}
+                  sx={{
+                    color: "white",
+                    position: "relative",
+                    borderRadius: "0px",
+                    "&::after": {
+                      content: '""',
+                      position: "absolute",
+                      width: "100%",
+                      height: "2px",
+                      backgroundColor: "white",
+                      bottom: -2,
+                      left: 0,
+                      transform: "scaleX(0)",
+                      transition: "transform 0.3s ease-in-out",
+                    },
+                    borderBottom:
+                      location.pathname === `/${item.toLowerCase()}`
+                        ? "2px solid white"
+                        : "2px solid transparent",
+                    "&:hover::after": {
+                      transform: "scaleX(1)",
+                    },
+                  }}
+                >
+                  {item}
+                </Button>
+              ))}
+            </Box>
+            <Box className="w-full flex justify-end xs:w-auto xs:block">
+              <Tooltip title="Abrir menú">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <FaUserCircle className="text-white ml-10" />
+                </IconButton>
+              </Tooltip>
+              <Menu
+                disableScrollLock
+                sx={{ mt: "45px" }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
                 }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
               >
-                {item}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
+                {settings.map((setting) => (
+                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                    <Typography sx={{ textAlign: "center", fontSize: "14px" }}>
+                      {setting}
+                    </Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+          </Toolbar>
+        </Container>
       </AppBar>
       <nav>
         <Drawer
