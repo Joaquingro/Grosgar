@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_ENDPOINTS } from "./endpoints";
+// import { API_ENDPOINTS } from "./endpoints";
 import { getEnvVar } from "../utils/env";
 
 const apiClient = axios.create({
@@ -30,20 +30,20 @@ apiClient.interceptors.response.use(
       return Promise.reject(new Error("No se pudo conectar con el servidor. Inténtalo más tarde."));
     }
 
-    const originalRequest = error.config;
-    if (error.response.status === 401 && !originalRequest._retry) {
-      originalRequest._retry = true;
+    // const originalRequest = error.config;
+    // if (error.response.status === 401 && !originalRequest._retry) {
+    //   originalRequest._retry = true;
 
-      try {
-        const { data } = await apiClient.post(API_ENDPOINTS.AUTH.REFRESH());
-        localStorage.setItem("token", data.token);
-        apiClient.defaults.headers.common["Authorization"] = `Bearer ${data.accessToken}`;
-        return apiClient(originalRequest); // Reintentar la solicitud original
-      } catch (refreshError) {
-        // window.location.href = "/login";
-        return Promise.reject(refreshError);
-      }
-    }
+    //   try {
+    //     const { data } = await apiClient.post(API_ENDPOINTS.AUTH.REFRESH());
+    //     localStorage.setItem("token", data.token);
+    //     apiClient.defaults.headers.common["Authorization"] = `Bearer ${data.accessToken}`;
+    //     return apiClient(originalRequest); // Reintentar la solicitud original
+    //   } catch (refreshError) {
+    //     // window.location.href = "/login";
+    //     return Promise.reject(refreshError);
+    //   }
+    // }
 
     return Promise.reject(error);
   }
