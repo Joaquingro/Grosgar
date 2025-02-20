@@ -21,7 +21,6 @@ import { FaUserCircle } from "react-icons/fa";
 
 const drawerWidth = 240;
 const navItems = ["Inicio", "Nosotros"];
-const settings = ["Cerrar sesión"];
 
 function DrawerAppBar(props) {
   const { window, id } = props;
@@ -29,6 +28,17 @@ function DrawerAppBar(props) {
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location.pathname);
+
+  const token = localStorage.getItem("token");
+
+  const settings = token
+    ? [{ label: "Cerrar sesión", action: () => handleLogout() }]
+    : [{ label: "Iniciar sesión", action: () => navigate("/auth/login") }];
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/auth/login");
+  };
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -196,13 +206,13 @@ function DrawerAppBar(props) {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography sx={{ textAlign: "center", fontSize: "14px" }}>
-                      {setting}
-                    </Typography>
-                  </MenuItem>
-                ))}
+                 {settings.map((setting) => (
+                    <MenuItem key={setting.label} onClick={setting.action}>
+                      <Typography sx={{ textAlign: "center", fontSize: "14px" }}>
+                        {setting.label}
+                      </Typography>
+                    </MenuItem>
+                  ))}
               </Menu>
             </Box>
           </Toolbar>
