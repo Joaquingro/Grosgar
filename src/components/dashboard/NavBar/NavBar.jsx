@@ -14,10 +14,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Container, Menu, MenuItem, Tooltip } from "@mui/material";
+import { Avatar, Container, Menu, MenuItem, Tooltip } from "@mui/material";
 import { FaUserCircle } from "react-icons/fa";
+import useAuthStore from "../../../stores/auth.store";
 
 const drawerWidth = 240;
 const navItems = ["Inicio", "Nosotros"];
@@ -25,9 +26,11 @@ const navItems = ["Inicio", "Nosotros"];
 function DrawerAppBar(props) {
   const { window, id } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const { logout, user } = useAuthStore();
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location.pathname);
+console.log(user);
 
   const token = localStorage.getItem("token");
 
@@ -35,8 +38,12 @@ function DrawerAppBar(props) {
     ? [{ label: "Cerrar sesión", action: () => handleLogout() }]
     : [{ label: "Iniciar sesión", action: () => navigate("/auth/login") }];
 
+ // Obtener la inicial del usuario si existe
+ const userInitial = user?.firstName ? user.firstName.charAt(0).toUpperCase() : <FaUserCircle size={45}/>;
+
   const handleLogout = () => {
     localStorage.removeItem("token");
+    logout();
     navigate("/auth/login");
   };
 
@@ -118,10 +125,6 @@ function DrawerAppBar(props) {
         }}
       >
         <Container maxWidth="xl">
-          {/* <div className="bg-white w-full m-auto">
-          <p className="text-xs text-black mb-0">Llámanos</p>
-        </div> */}
-
           <Toolbar className="max-w-[1350px] w-full m-auto">
             <IconButton
               color="inherit"
@@ -185,9 +188,24 @@ function DrawerAppBar(props) {
             </Box>
             <Box className="w-full flex justify-end xs:w-auto xs:block">
               <Tooltip title="Abrir menú">
+                <div className="flex flex-col items-center gap-2 ml-3">
+
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <FaUserCircle className="text-white ml-10" />
+                  {user?.profileImage ? (
+                    <Avatar src={user.profileImage} alt={user.firstName} />
+                  ) : (
+                    <Avatar sx={{ bgcolor: "gray", width: 40, height: 40, fontSize: 18 }}>
+                      {userInitial}
+                    </Avatar>
+                  )}
                 </IconButton>
+
+              {user && (
+                <p className="hidden xs:block text-white text-xs">
+                  ¡Hola {user.firstName}!
+                </p>
+              )}
+              </div>
               </Tooltip>
               <Menu
                 disableScrollLock
@@ -206,13 +224,13 @@ function DrawerAppBar(props) {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                 {settings.map((setting) => (
-                    <MenuItem key={setting.label} onClick={setting.action}>
-                      <Typography sx={{ textAlign: "center", fontSize: "14px" }}>
-                        {setting.label}
-                      </Typography>
-                    </MenuItem>
-                  ))}
+                {settings.map((setting) => (
+                  <MenuItem key={setting.label} onClick={setting.action}>
+                    <Typography sx={{ textAlign: "center", fontSize: "14px" }}>
+                      {setting.label}
+                    </Typography>
+                  </MenuItem>
+                ))}
               </Menu>
             </Box>
           </Toolbar>
@@ -225,7 +243,7 @@ function DrawerAppBar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
             display: { xs: "block", sm: "none" },
@@ -243,10 +261,6 @@ function DrawerAppBar(props) {
 }
 
 DrawerAppBar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window: PropTypes.func,
   id: PropTypes.string,
 };

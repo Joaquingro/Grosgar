@@ -1,4 +1,4 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { FaGoogle, FaFacebook } from "react-icons/fa";
 import { authApi } from "../../api/api-client";
@@ -7,8 +7,9 @@ import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logodoradoconfondo.jpeg";
 import { Divider, Typography } from "@mui/material";
 import useAuthStore from "../../stores/auth.store";
+import FormikInput from "../../components/ui/Input";
 
-const LoginPage = () => {
+const Register = () => {
   const navigate = useNavigate();
   const { setUser } = useAuthStore();
   const validationSchema = Yup.object({
@@ -18,11 +19,11 @@ const LoginPage = () => {
 
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
-      const data = await authApi.login(values.email, values.password);
+      const data = await authApi.register(values);
       console.log("Login exitoso", data);
       if (data.responseCode === 0) {
         toast.success(data.message);
-        setUser(data.data.user)
+        setUser(data.data.user);
         navigate("/inicio");
       } else {
         toast.error(data.message);
@@ -36,13 +37,8 @@ const LoginPage = () => {
 
   return (
     <div className="max-w-[1350px] w-full m-auto flex items-center justify-center h-[700px] sm:justify-normal py-5 sm:py-0 bg-white rounded-lg">
-      <div
-        className="hidden sm:block w-2/3 bg-cover bg-no-repeat bg-center h-full rounded-l-lg"
-        style={{ backgroundImage: "url('/src/assets/login.jpg')" }}
-      ></div>
-
       <div className="flex flex-col items-center w-full h-full max-w-[400px] m-auto py-4">
-        <div className="flex w-full justify-center sm:justify-end mb-16">
+        <div className="flex w-full justify-center sm:justify-end ">
           <button
             className="bg-transparent hover:bg-transparent"
             onClick={() => navigate("/inicio")}
@@ -50,48 +46,37 @@ const LoginPage = () => {
             <img src={logo} alt="logo" className="w-[70px] rounded-lg" />
           </button>
         </div>
-        <h2 className="text-2xl font-semibold mb-4">Iniciar Sesión</h2>
+        <h2 className="text-2xl font-semibold mb-4">Regístrate</h2>
         <Formik
-          initialValues={{ email: "", password: "" }}
+          initialValues={{
+            firstName: "",
+            lastName: "",
+            email: "",
+            phoneNumber: "",
+          }}
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (
             <Form className="p-6 rounded-lg w-full">
-              <div className="mb-4">
-                <label className="block text-gray-700">
-                  Correo Electrónico
-                </label>
-                <Field
-                  type="email"
-                  name="email"
-                  className="w-full px-4 py-2 border rounded-lg"
-                />
-                <ErrorMessage
-                  name="email"
-                  component="div"
-                  className="text-red-500 text-sm"
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-gray-700">Contraseña</label>
-                <Field
-                  type="password"
-                  name="password"
-                  className="w-full px-4 py-2 border rounded-lg"
-                />
-                <ErrorMessage
-                  name="password"
-                  component="div"
-                  className="text-red-500 text-sm"
-                />
-              </div>
+              <FormikInput label="Nombre" name="firstName" type="text" />
+              <FormikInput label="Apellidos" name="lastName" type="text" />
+              <FormikInput
+                label="Correo Electrónico"
+                name="email"
+                type="email"
+              />
+              <FormikInput
+                label="Número de Teléfono"
+                name="phoneNumber"
+                type="tel"
+              />
               <button
                 type="submit"
                 disabled={isSubmitting}
                 className="w-full text-white py-2 rounded-3xl my-5"
               >
-                {isSubmitting ? "Cargando..." : "Iniciar Sesión"}
+                {isSubmitting ? "Cargando..." : "Registrarse"}
               </button>
               <Divider>
                 <Typography variant="body2" color="textSecondary">
@@ -110,8 +95,12 @@ const LoginPage = () => {
           )}
         </Formik>
       </div>
+      <div
+        className="hidden sm:block w-2/3 bg-cover bg-no-repeat bg-center h-full rounded-l-lg"
+        style={{ backgroundImage: "url('/src/assets/login.jpg')" }}
+      ></div>
     </div>
   );
 };
 
-export default LoginPage;
+export default Register;
