@@ -5,6 +5,7 @@ import { authApi } from "../../api/api-client";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logodoradoconfondo.jpeg";
+import background from "../../assets/login.jpg";
 import { Divider, Typography } from "@mui/material";
 import useAuthStore from "../../stores/auth.store";
 
@@ -22,7 +23,7 @@ const LoginPage = () => {
       console.log("Login exitoso", data);
       if (data.responseCode === 0) {
         toast.success(data.message);
-        setUser(data.data.user)
+        setUser(data.data.user);
         navigate("/inicio");
       } else {
         toast.error(data.message);
@@ -37,8 +38,8 @@ const LoginPage = () => {
   return (
     <div className="max-w-[1350px] w-full m-auto flex items-center justify-center h-[700px] sm:justify-normal py-5 sm:py-0 bg-white rounded-lg">
       <div
-        className="hidden sm:block w-2/3 bg-cover bg-no-repeat bg-center h-full rounded-l-lg"
-        style={{ backgroundImage: "url('/src/assets/login.jpg')" }}
+        className="hidden sm:block w-2/3 bg-cover bg-no-repeat bg-center h-full rounded-r-full"
+        style={{ backgroundImage: `url(${background})` }}
       ></div>
 
       <div className="flex flex-col items-center w-full h-full max-w-[400px] m-auto py-4">
@@ -109,6 +110,9 @@ const LoginPage = () => {
             </Form>
           )}
         </Formik>
+        <button className="bg-transparent text-blue-500 hover:bg-transparent hover:underline" onClick={()=>navigate('/auth/register')}>
+          ¿No tienes cuenta?, ¡Regístrate aqui!
+        </button>
       </div>
     </div>
   );

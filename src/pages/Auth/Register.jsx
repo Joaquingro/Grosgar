@@ -8,6 +8,8 @@ import logo from "../../assets/logodoradoconfondo.jpeg";
 import { Divider, Typography } from "@mui/material";
 import useAuthStore from "../../stores/auth.store";
 import FormikInput from "../../components/ui/Input";
+import background from "../../assets/register.jpg";
+
 
 const Register = () => {
   const navigate = useNavigate();
@@ -38,7 +40,7 @@ const Register = () => {
   return (
     <div className="max-w-[1350px] w-full m-auto flex items-center justify-center h-[700px] sm:justify-normal py-5 sm:py-0 bg-white rounded-lg">
       <div className="flex flex-col items-center w-full h-full max-w-[400px] m-auto py-4">
-        <div className="flex w-full justify-center sm:justify-end ">
+        <div className="flex w-full justify-center sm:justify-start ">
           <button
             className="bg-transparent hover:bg-transparent"
             onClick={() => navigate("/inicio")}
@@ -96,8 +98,8 @@ const Register = () => {
         </Formik>
       </div>
       <div
-        className="hidden sm:block w-2/3 bg-cover bg-no-repeat bg-center h-full rounded-l-lg"
-        style={{ backgroundImage: "url('/src/assets/login.jpg')" }}
+        className="hidden sm:block w-2/3 bg-cover bg-no-repeat bg-center h-full rounded-l-full"
+        style={{ backgroundImage: `url(${background})` }}
       ></div>
     </div>
   );
