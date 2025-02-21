@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import style from "../Whatsapp/Whatsapp.module.css";
+import style from "./Whatsapp.module.css";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FaArrowCircleUp, FaWhatsapp } from 'react-icons/fa';
 

@@ -1,4 +1,4 @@
-import style from "../ImageContent/ImageContent.module.css";
+import style from "./ImageContent.module.css";
 
 export default function ImageContent() {
   return (

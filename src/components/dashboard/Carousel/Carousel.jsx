@@ -11,13 +11,13 @@ import "swiper/css/autoplay";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 // Importa las imágenes correctamente
-import financiera from "../../assets/financiera.jpg";
-import fiscal from "../../assets/fiscal.jpg";
-import costos from "../../assets/costos.jpg";
-import pymes from "../../assets/pymes.jpg";
-import freelance from "../../assets/freelance.jpg";
-import micro from "../../assets/micro.jpg";
-import gigEconomy from "../../assets/digital.jpg";
+import financiera from "../../../assets/financiera.jpg";
+import fiscal from "../../../assets/fiscal.jpg";
+import costos from "../../../assets/costos.jpg";
+import pymes from "../../../assets/pymes.jpg";
+import freelance from "../../../assets/freelance.jpg";
+import micro from "../../../assets/micro.jpg";
+import gigEconomy from "../../../assets/digital.jpg";
 import { LuMessageCircleMore } from "react-icons/lu";
 
 const accountingTypes = [
