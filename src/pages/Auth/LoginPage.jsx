@@ -1,4 +1,4 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { FaGoogle, FaFacebook } from "react-icons/fa";
 import { authApi } from "../../api/api-client";
@@ -8,6 +8,7 @@ import logo from "../../assets/logodoradoconfondo.jpeg";
 import background from "../../assets/login.jpg";
 import { Divider, Typography } from "@mui/material";
 import useAuthStore from "../../stores/auth.store";
+import FormikInput from "../../components/ui/Input";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -59,34 +60,12 @@ const LoginPage = () => {
         >
           {({ isSubmitting }) => (
             <Form className="p-6 rounded-lg w-full">
-              <div className="mb-4">
-                <label className="block text-gray-700">
-                  Correo Electrónico
-                </label>
-                <Field
-                  type="email"
-                  name="email"
-                  className="w-full px-4 py-2 border rounded-lg"
-                />
-                <ErrorMessage
-                  name="email"
-                  component="div"
-                  className="text-red-500 text-sm"
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-gray-700">Contraseña</label>
-                <Field
-                  type="password"
-                  name="password"
-                  className="w-full px-4 py-2 border rounded-lg"
-                />
-                <ErrorMessage
-                  name="password"
-                  component="div"
-                  className="text-red-500 text-sm"
-                />
-              </div>
+              <FormikInput
+                label="Correo Electrónico"
+                name="email"
+                type="email"
+              />
+              <FormikInput label="Contraseña" name="password" type="password" />
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -100,17 +79,20 @@ const LoginPage = () => {
                 </Typography>
               </Divider>
               <div className="flex justify-center mt-4 space-x-4">
-                <button className="flex items-center bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+                <button disabled={true} className="flex items-center bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
                   <FaGoogle className="mr-2" /> Google
                 </button>
-                <button className="flex items-center bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800">
+                <button disabled={true} className="flex items-center bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800">
                   <FaFacebook className="mr-2" /> Facebook
                 </button>
               </div>
             </Form>
           )}
         </Formik>
-        <button className="bg-transparent text-blue-500 hover:bg-transparent hover:underline" onClick={()=>navigate('/auth/register')}>
+        <button
+          className="bg-transparent text-blue-500 hover:bg-transparent hover:underline"
+          onClick={() => navigate("/auth/register")}
+        >
           ¿No tienes cuenta?, ¡Regístrate aqui!
         </button>
       </div>
