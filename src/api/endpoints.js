@@ -8,6 +8,7 @@ export const API_ENDPOINTS = {
     REGISTER: () => `${caimServer}/api/auth/register`,
     LOGOUT: () => `${caimServer}/auth/logout`,
     REFRESH: () => `${caimServer}/auth/refresh`,
+    VERIFY: () => `${caimServer}/api/auth/verify`,
     ME: () => `${caimServer}/auth/me`,
   },
 };

@@ -8,6 +8,7 @@ import Home from '../pages/Dashboard/Home/Home';
 import About from '../pages/About/About';
 import LoginPage from '../pages/Auth/LoginPage';
 import Register from '../pages/Auth/Register';
+import Verification from '../pages/Auth/Verification';
 
 
 export const router = createBrowserRouter( [
@@ -51,6 +52,10 @@ export const router = createBrowserRouter( [
           {
             path: 'register',
             element: <Register/>
+          },
+          {
+            path: 'verification',
+            element: <Verification/>
           }
         ]
 
