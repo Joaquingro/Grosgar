@@ -15,7 +15,7 @@ const LoginPage = () => {
   const { setUser } = useAuthStore();
   const validationSchema = Yup.object({
     email: Yup.string().email("Correo inválido").required("Requerido"),
-    password: Yup.string().min(6, "Mínimo 6 caracteres").required("Requerido"),
+    password: Yup.string().required("Requerido"),
   });
 
   const handleSubmit = async (values, { setSubmitting }) => {

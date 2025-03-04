@@ -72,3 +72,20 @@ button:hover {
 .scrollContainer::-webkit-scrollbar-thumb:hover {
 	background-color: black !important;
 }
+
+/*ANIMACIONES*/
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-check {
+  animation: zoomIn 1s ease-out;
+}

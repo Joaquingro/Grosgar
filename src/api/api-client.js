@@ -14,6 +14,12 @@ export const authApi = {
     return data;
   },
 
+  verify: async (token) => {
+    const { data } = await apiClient.get(`${API_ENDPOINTS.AUTH.VERIFY()}?token=${token}`);
+    return data;
+  },
+  
+
   logout: async () => {
     await apiClient.post(API_ENDPOINTS.AUTH.LOGOUT());
     localStorage.removeItem("token");
