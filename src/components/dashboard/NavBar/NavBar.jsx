@@ -16,8 +16,9 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import logo from "../../../assets/logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Avatar, Container, Menu, MenuItem, Tooltip } from "@mui/material";
-import { FaUserCircle } from "react-icons/fa";
+import {  Container } from "@mui/material";
+// import { Avatar, Menu, MenuItem, Tooltip } from "@mui/material";
+// import { FaUserCircle } from "react-icons/fa";
 import useAuthStore from "../../../stores/auth.store";
 
 const drawerWidth = 240;
@@ -26,39 +27,39 @@ const navItems = ["Inicio", "Nosotros"];
 function DrawerAppBar(props) {
   const { window, id } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const { logout, user } = useAuthStore();
+  const { user } = useAuthStore();
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location.pathname);
 console.log(user);
 
-  const token = localStorage.getItem("token");
+  // const token = localStorage.getItem("token");
 
-  const settings = token
-    ? [{ label: "Cerrar sesión", action: () => handleLogout() }]
-    : [{ label: "Iniciar sesión", action: () => navigate("/auth/login") }];
+//   const settings = token
+//     ? [{ label: "Cerrar sesión", action: () => handleLogout() }]
+//     : [{ label: "Iniciar sesión", action: () => navigate("/auth/login") }];
 
- // Obtener la inicial del usuario si existe
- const userInitial = user?.firstName ? user.firstName.charAt(0).toUpperCase() : <FaUserCircle size={45}/>;
+//  // Obtener la inicial del usuario si existe
+//  const userInitial = user?.firstName ? user.firstName.charAt(0).toUpperCase() : <FaUserCircle size={45}/>;
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    logout();
-    navigate("/auth/login");
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem("token");
+  //   logout();
+  //   navigate("/auth/login");
+  // };
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
   const drawer = (
     <Box
@@ -186,7 +187,7 @@ console.log(user);
                 </Button>
               ))}
             </Box>
-            <Box className="w-full flex justify-end xs:w-auto xs:block">
+            {/* <Box className="w-full flex justify-end xs:w-auto xs:block">
               <Tooltip title="Abrir menú">
                 <div className="flex flex-col items-center gap-2 ml-3">
 
@@ -232,7 +233,7 @@ console.log(user);
                   </MenuItem>
                 ))}
               </Menu>
-            </Box>
+            </Box> */}
           </Toolbar>
         </Container>
       </AppBar>
