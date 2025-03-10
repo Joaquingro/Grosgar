@@ -11,4 +11,7 @@ export const API_ENDPOINTS = {
     VERIFY: () => `${caimServer}/api/auth/verify`,
     ME: () => `${caimServer}/auth/me`,
   },
+  SUPPORT: {
+    SUPPORT: () => `${caimServer}/api/support/send`,
+  }
 };

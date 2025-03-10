@@ -1,23 +1,27 @@
-/* eslint-disable react/prop-types */
-import { Box, TextField } from "@mui/material";
-import { useState } from "react";
 import { CiPhone } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
+import { supportApi } from "../../../api/api-client";
+import { toast } from "react-toastify";
+import FormikInput from "../../../components/ui/Input";
+import { Form, Formik } from "formik";
+import * as Yup from "yup";
+import PropTypes from 'prop-types';
+function Contact({ id }) {
+  const validationSchema = Yup.object({
+    name: Yup.string()
+      .required("El nombre es obligatorio")
+      .min(3, "El nombre debe tener al menos 3 caracteres")
+      .max(100, "El nombre no puede exceder los 100 caracteres"),
 
-export default function Contact({ id }) {
-  const [inputs, setInputs] = useState({
-    name: "",
-    email: "",
-    message: "",
+    email: Yup.string()
+      .email("Correo electrónico inválido")
+      .required("El correo electrónico es obligatorio"),
+
+    message: Yup.string()
+      .required("El mensaje es obligatorio")
+      .min(10, "El mensaje debe tener al menos 10 caracteres")
+      .max(1000, "El mensaje no puede exceder los 1000 caracteres"),
   });
-  const handleInput = (event) => {
-    const value = event.target.value;
-    const name = event.target.name;
-    setInputs({
-      ...inputs,
-      [name]: value,
-    });
-  };
 
   const contactOptions = [
     {
@@ -37,11 +41,25 @@ export default function Contact({ id }) {
     },
   ];
 
+  const handleSubmit = async (values, { setSubmitting, resetForm  }) => {
+    try {
+      const data = await supportApi.supportEmail(values);
+      console.log("Envío exitoso", data);
+      if (data.responseCode === 0) {
+        toast.success(data.message);
+        resetForm();
+      } else {
+        toast.error(data.message);
+      }
+    } catch (error) {
+      console.log(error.response.data.message);
+      toast.error(error.response.data.message);
+    }
+    setSubmitting(false);
+  };
+
   return (
     <div className="relative w-full px-4 ms:px-20 bg-line bg-cover bg-no-repeat sm:bg-center">
-
-
-
       <div className="max-w-[1500px] w-full m-auto py-5 sm:p-20 flex justify-around gap-10 sm:gap-5 flex-wrap">
         <div
           id={id}
@@ -80,81 +98,59 @@ export default function Contact({ id }) {
         </div>
 
         <div className="bg-white py-4 px-4 rounded-2xl max-w-[400px] w-full">
-          <p className="mb-4 font-semibold text-2xl">
-            ¿Tienes alguna duda?
-          </p>
-          <p className="text-sm text-neutral-500 mb-11">
+          <p className="mb-4 font-semibold text-2xl">¿Tienes alguna duda?</p>
+          <p className="text-sm text-neutral-500 mb-5">
             Te atenderemos lo más pronto posible
           </p>
 
-          <Box
-            component="form"
-            action="https://formspree.io/f/mleqrpva"
-            method="POST"
-            noValidate
+          <Formik
+            initialValues={{ name: "", email: "", message: "" }}
+            validationSchema={validationSchema}
+            onSubmit={handleSubmit}
           >
-            <Box mb={2}>
-              <TextField
-                fullWidth
-                label="Tu nombre"
-                variant="outlined"
-                name="name"
-                value={inputs.name}
-                onChange={handleInput}
-                required
-                size="small"
-                sx={{
-                  "& .MuiInputBase-root": {
-                    minHeight: "36px",
-                    borderRadius: "25px",
-                  },
-                }}
-              />
-            </Box>
-            <Box mb={2}>
-              <TextField
-                fullWidth
-                label="Correo electrónico"
-                variant="outlined"
-                type="email"
-                name="email"
-                value={inputs.email}
-                onChange={handleInput}
-                required
-                size="small"
-                sx={{
-                  "& .MuiInputBase-root": {
-                    minHeight: "36px",
-                    borderRadius: "25px",
-                  },
-                }}
-              />
-            </Box>
-            <Box mb={2}>
-              <TextField
-                fullWidth
-                label="Cuéntame acerca de tu consulta..."
-                variant="outlined"
-                name="message"
-                value={inputs.message}
-                onChange={handleInput}
-                multiline
-                rows={4}
-                sx={{
-                  "& .MuiOutlinedInput-root": {
-                    borderRadius: "25px",
-                  },
-                }}
-                required
-              />
-            </Box>
-
-            <button className="w-full mt-8" type="submit">
-              Enviar
-            </button>
-          </Box>
+            {({ isSubmitting, values, handleChange }) => (
+              <Form className="rounded-lg w-full">
+                <FormikInput
+                  label="Tu nombre"
+                  name="name"
+                  type="text"
+                  value={values.name}
+                  onChange={handleChange}
+                />
+                <FormikInput
+                  label="Correo electrónico"
+                  name="email"
+                  type="email"
+                  value={values.email}
+                  onChange={handleChange}
+                />
+                <FormikInput
+                  label="Cuéntame acerca de tu consulta..."
+                  name="message"
+                  type="text"
+                  value={values.message}
+                  onChange={handleChange}
+                  multiline
+                  rows={4}
+                />
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full text-white py-2 rounded-3xl my-5"
+                >
+                  {isSubmitting ? "Enviando..." : "Enviar"}
+                </button>
+              </Form>
+            )}
+          </Formik>
         </div>
       </div>
     </div>
   );
 }
+
+Contact.propTypes = {
+  id: PropTypes.string.isRequired, 
+};
+
+export default Contact;
