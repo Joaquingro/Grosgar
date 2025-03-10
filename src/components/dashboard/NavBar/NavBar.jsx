@@ -16,7 +16,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import logo from "../../../assets/logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import {  Container } from "@mui/material";
+import { Container } from "@mui/material";
 // import { Avatar, Menu, MenuItem, Tooltip } from "@mui/material";
 // import { FaUserCircle } from "react-icons/fa";
 import useAuthStore from "../../../stores/auth.store";
@@ -31,16 +31,20 @@ function DrawerAppBar(props) {
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location.pathname);
-console.log(user);
+  console.log(user);
 
   // const token = localStorage.getItem("token");
 
-//   const settings = token
-//     ? [{ label: "Cerrar sesión", action: () => handleLogout() }]
-//     : [{ label: "Iniciar sesión", action: () => navigate("/auth/login") }];
+  // const settings = token
+  //   ? [{ label: "Cerrar sesión", action: () => handleLogout() }]
+  //   : [{ label: "Iniciar sesión", action: () => navigate("/auth/login") }];
 
-//  // Obtener la inicial del usuario si existe
-//  const userInitial = user?.firstName ? user.firstName.charAt(0).toUpperCase() : <FaUserCircle size={45}/>;
+  // // Obtener la inicial del usuario si existe
+  // const userInitial = user?.firstName ? (
+  //   user.firstName.charAt(0).toUpperCase()
+  // ) : (
+  //   <FaUserCircle size={45} />
+  // );
 
   // const handleLogout = () => {
   //   localStorage.removeItem("token");
@@ -190,23 +194,29 @@ console.log(user);
             {/* <Box className="w-full flex justify-end xs:w-auto xs:block">
               <Tooltip title="Abrir menú">
                 <div className="flex flex-col items-center gap-2 ml-3">
+                  <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                    {user?.profileImage ? (
+                      <Avatar src={user.profileImage} alt={user.firstName} />
+                    ) : (
+                      <Avatar
+                        sx={{
+                          bgcolor: "gray",
+                          width: 40,
+                          height: 40,
+                          fontSize: 18,
+                        }}
+                      >
+                        {userInitial}
+                      </Avatar>
+                    )}
+                  </IconButton>
 
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  {user?.profileImage ? (
-                    <Avatar src={user.profileImage} alt={user.firstName} />
-                  ) : (
-                    <Avatar sx={{ bgcolor: "gray", width: 40, height: 40, fontSize: 18 }}>
-                      {userInitial}
-                    </Avatar>
+                  {user && (
+                    <p className="hidden xs:block text-white text-xs">
+                      ¡Hola {user.firstName}!
+                    </p>
                   )}
-                </IconButton>
-
-              {user && (
-                <p className="hidden xs:block text-white text-xs">
-                  ¡Hola {user.firstName}!
-                </p>
-              )}
-              </div>
+                </div>
               </Tooltip>
               <Menu
                 disableScrollLock
@@ -236,6 +246,17 @@ console.log(user);
             </Box> */}
           </Toolbar>
         </Container>
+        {!user?.emailVerified && (
+          <div className="bg-black text-xs py-1">
+            <span className="flex items-center justify-around">
+              <p>
+                Aún no haz verificado tu correo, por favor da click al botón
+                para verificarlo...
+              </p>
+              <button className="text-white">Verificar correo</button>
+            </span>
+          </div>
+        )}
       </AppBar>
       <nav>
         <Drawer
@@ -244,7 +265,7 @@ console.log(user);
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, 
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },
