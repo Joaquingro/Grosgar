@@ -13,5 +13,6 @@ export const API_ENDPOINTS = {
   },
   SUPPORT: {
     SUPPORT: () => `${caimServer}/api/support/send`,
+    ACTIVE: () => `${caimServer}/api/health-check`
   }
 };

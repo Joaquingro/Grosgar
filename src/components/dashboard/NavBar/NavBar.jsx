@@ -246,7 +246,7 @@ function DrawerAppBar(props) {
             </Box> */}
           </Toolbar>
         </Container>
-        {!user?.emailVerified && (
+        {/* {!user?.emailVerified && (
           <div className="bg-black text-xs py-1">
             <span className="flex items-center justify-around">
               <p>
@@ -256,7 +256,7 @@ function DrawerAppBar(props) {
               <button className="text-white">Verificar correo</button>
             </span>
           </div>
-        )}
+        )} */}
       </AppBar>
       <nav>
         <Drawer

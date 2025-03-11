@@ -37,4 +37,10 @@ export const supportApi = {
     const { data } = await apiClient.post(API_ENDPOINTS.SUPPORT.SUPPORT(), { request });
     return data;
   },
+
+  active: async () => {
+    const { data } = await apiClient.get(API_ENDPOINTS.SUPPORT.ACTIVE());
+    return data;
+  },
+  
 }
