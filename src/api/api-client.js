@@ -34,7 +34,7 @@ export const authApi = {
 
 export const supportApi = {
   supportEmail: async (request) => {
-    const { data } = await apiClient.post(API_ENDPOINTS.SUPPORT.SUPPORT(), { request });
+    const { data } = await apiClient.post(API_ENDPOINTS.SUPPORT.SUPPORT(), request);
     return data;
   },
 

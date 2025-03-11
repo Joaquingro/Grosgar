@@ -45,7 +45,7 @@ function Contact({ id }) {
   const handleSubmit = async (values, { setSubmitting, resetForm  }) => {
     try {
       const data = await supportApi.supportEmail(values);
-      console.log("Envío exitoso", data);
+      console.log("Envío exitoso", values);
       if (data.responseCode === 0) {
         toast.success(data.message);
         resetForm();
