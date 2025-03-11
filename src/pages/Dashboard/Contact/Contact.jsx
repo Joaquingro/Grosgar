@@ -6,6 +6,7 @@ import FormikInput from "../../../components/ui/Input";
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
 import PropTypes from 'prop-types';
+import { IoLocationSharp } from "react-icons/io5";
 function Contact({ id }) {
   const validationSchema = Yup.object({
     name: Yup.string()
@@ -82,6 +83,11 @@ function Contact({ id }) {
             <div className="flex items-center gap-3 mt-5">
               <MdEmail />
               <p>consultoriaempresarialcaim@gmail.com</p>
+            </div>
+            <div className="flex items-center gap-3 mt-5">
+              <IoLocationSharp />
+            
+              <p>San Juan Teotihuacán y Acolman, Estado de México</p>
             </div>
           </div>
 
